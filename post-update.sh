@@ -5,7 +5,7 @@ sudo apt-get update; sudo apt-get install libretro-fceu retroarch retroarch-phoe
 # Create config file for running RetroArch
 
 mkdir -p ~/.config/retroarch/
-mv retroarch.cfg ~/.config/retroarch/
+cp retroarch.cfg ~/.config/retroarch/
 
 echo ""
 echo "Now run it!:"

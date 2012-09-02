@@ -26,16 +26,18 @@ First, edit your `~/.profile` file, adding the following line the end (so RetroA
 
     export LD_LIBRARY_PATH=/opt/vc/lib
 
-Then, clone this project somewhere and run the `pre-update.sh` script
+Then, clone this project somewhere (your home directory is a good option) and run the `pre-update.sh` script
 
     cd ~
     git clone git://github.com/normalocity/retroarch-nes-raspi-build.git
     cd retroarch-nes-raspi-build
     ./pre-update.sh
 
-This will run some updates. It may take a long time (30 minutes?) - be patient. When it's done you'll be asked to reboot. Do so.
+This will run some updates. It may take a long time (30 minutes?), and maybe longer if your on a DSL or slower connection. Be patient. :)
 
-After that's done, run the `post-update.sh` script, which will install some binaries and copy the RetroArch config file over with options that have been found to work reasonably well for the Raspberry Pi:
+When it's done you'll **either** (a) be asked to reboot or (b) see a message on the last line that says something to the effect of "Your firmware is already up to date". Whatever it says, just reboot anyway.
+
+After that's done, run the `post-update.sh` script, which will install some emulation software binaries and copy the RetroArch config file to your home directory with options that have been found to work *reasonably* well for the Raspberry Pi:
 
     cd ~/retroarch-nes-raspi-build
     ./post-update.sh

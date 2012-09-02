@@ -12,16 +12,16 @@ The great thing about this is that a custom software stack for emulation is only
 
 1. Raspberry Pi Rev B. board (the one with the ethernet jack)
 2. Power supply for your Pi. It should be at least **5.0 volts, 1 amp (or 1000 milliamps)**. I use the outlet-to-USB adapter I got with the iPad - it's 2 amps - more than enough. I believe the power supply for the Google Nexus 7 tablet is also sufficiently powerful. Your typical cell phone wall outlet power supply might also be sufficient, but double check the power output printed on the power supply itself.
-2. SD card imaged with the 2012-08-16-wheezy-raspbian image (or possibly newer than this - this is the default, fully supported distro)
-3. An available SD card that's at least 4GiB in size
+3. SD card imaged with the 2012-08-16-wheezy-raspbian image (or possibly newer than this - this is the default, fully supported distro)
+4. An available SD card that's at least 4GiB in size
 
 ## Build
 
 Starting with a freshly imaged Raspberry Pi SD card, when the Raspberry Pi first boots up and you see the config screen, and do the following:
 
-1. Go to the "memory_split" section and change the option to "192 128MiB for ARM, 64 MiB for VideoCore"
-2. Go to the "expand_rootfs" section and expand the root partition to fill your SD card. The standard 1.7GiB doesn't seem to be enough out of the box for `git` and all the other dependencies. I've run into problems during the very last steps where the last binary or two ran out of space, just before I was about to start up RetroArch. What a tease!
-3. Changing the root filesystem (FS) size requires a reboot. When it prompts you to reboot, do it.
+* Go to the "memory_split" section and change the option to "192 128MiB for ARM, 64 MiB for VideoCore"
+* Go to the "expand_rootfs" section and expand the root partition to fill your SD card. The standard 1.7GiB doesn't seem to be enough out of the box for `git` and all the other dependencies. I've run into problems during the very last steps where the last binary or two ran out of space, just before I was about to start up RetroArch. What a tease!
+* Changing the root filesystem (FS) size requires a reboot. When it prompts you to reboot, do it.
 
 First, edit your `~/.profile` file, adding the following line the end (so RetroArch can find some needed libraries)
 

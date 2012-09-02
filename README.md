@@ -8,7 +8,7 @@
 Starting with a freshly imaged Raspberry Pi SD card, when the Raspberry Pi first boots up and you see the config screen, and do the following:
 
 1. Go to the "memory_split" section and change the option to "128 128MiB for ARM, 128 MiB for VideoCore"
-2. Go to the "expand_rootfs" section and expand the root partition to fill your SD card. The standard 1.7GiB doesn't seem to be enough out of the box for `git` and all the other dependencies. I've run into problems during the very last steps where the last binary or two ran out of space, like just before I was about to start up RetroArch.
+2. Go to the "expand_rootfs" section and expand the root partition to fill your SD card. The standard 1.7GiB doesn't seem to be enough out of the box for `git` and all the other dependencies. I've run into problems during the very last steps where the last binary or two ran out of space, just before I was about to start up RetroArch. What a tease!
 3. Changing the root filesystem (FS) size requires a reboot. When it prompts you to reboot, do it.
 
 Then, clone this project somewhere and run the `pre-update.sh` script

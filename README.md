@@ -24,7 +24,7 @@ Starting with a freshly imaged Raspberry Pi SD card, when the Raspberry Pi first
 
 First, edit your `~/.profile` file, adding the following line the end (so RetroArch can find some needed libraries)
 
-    export LD_LIBRARY_PATH=/opt/vs/lib
+    export LD_LIBRARY_PATH=/opt/vc/lib
 
 Then, clone this project somewhere and run the `pre-update.sh` script
 

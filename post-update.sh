@@ -1,6 +1,6 @@
 # Install RetroArch binaries
 
-sudo apt-get update; sudo apt-get install libretro-fceu retroarch retroarch-phoenix
+sudo apt-get -y update; sudo apt-get -y install libretro-fceu retroarch retroarch-phoenix
 
 # Create config file for running RetroArch
 

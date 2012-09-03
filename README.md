@@ -2,7 +2,7 @@
 
 It's my desire to build a project that allows you to convert your Raspberry Pi into a great little emulation box. I'm most interested in NES emulation myself, but I'm open to discussing other systems supported by RetroArch (and others, if you're running your own projects).
 
-My vision is to provide "turn on and play" functionality. That is, eventually you should be able to download a pre-built OS image to your SD card with everything installed and configured already, and all you have to do it plug the Raspberry Pi into your TV with a compatible controller and you're playing classic NES games in 30 seconds or less.
+My vision is to provide "turn on and play" functionality. That is, eventually you should be able to download a pre-built OS image to your SD card with everything installed and configured already, and all you have to do is plug the Raspberry Pi into your TV with a compatible controller and you're playing classic NES games in 30 seconds or less.
 
 I'm going to try a lot of little experiments throughout the life of the project, tweaking the emulator settings, the RAM settings, swapping out various drivers and trying various distros to see what works best. While I'm open to learning about and understanding all the different ways the community might want to setup an emulation box, I'm most interested in the "turn on and play" potential that the Raspberry Pi offers, should it be plugged into your living room television.
 

@@ -17,7 +17,7 @@ The great thing about this is that a custom software stack for emulation is only
 
 ## Build
 
-Starting with a freshly imaged Raspberry Pi SD card, when the Raspberry Pi first boots up and you see the config screen, and do the following:
+Start with a freshly imaged Raspberry Pi SD card. When the Raspberry Pi first boots up you will see the config screen. Change the following options:
 
 * Go to the "memory_split" section and change the option to "192 128MiB for ARM, 64 MiB for VideoCore"
 * Go to the "expand_rootfs" section and expand the root partition to fill your SD card. The standard 1.7GiB doesn't seem to be enough out of the box for `git` and all the other dependencies. I've run into problems during the very last steps where the last binary or two ran out of space, just before I was about to start up RetroArch. What a tease!

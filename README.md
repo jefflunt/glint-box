@@ -21,6 +21,7 @@ Start with a freshly imaged Raspberry Pi SD card. When the Raspberry Pi first bo
 
 * Go to the "memory_split" section and change the option to "192 128MiB for ARM, 64 MiB for VideoCore"
 * Go to the "expand_rootfs" section and expand the root partition to fill your SD card. The standard 1.7GiB doesn't seem to be enough out of the box for `git` and all the other dependencies. I've run into problems during the very last steps where the last binary or two ran out of space, just before I was about to start up RetroArch. What a tease!
+* Go to the "overclock" option, skip past the warning, and set your Raspberry Pi to "Modest 800MHz ARM, 300MHz core, 400MHz SDRAM, 0 overvolt"
 * Changing the root filesystem (FS) size requires a reboot. When it prompts you to reboot, do it.
 
 First, edit your `~/.profile` file, adding the following line the end (so RetroArch can find some needed libraries)
@@ -32,30 +33,25 @@ Then, clone this project somewhere (your home directory is a good option) and ru
     cd ~
     git clone git://github.com/normalocity/retroarch-nes-raspi-build.git
     cd retroarch-nes-raspi-build
-    ./pre-update.sh
+    ./all-in-one.sh
 
 This will run some updates. It may take a long time (30 minutes?), and maybe longer if you're on a DSL or slower connection. Be patient. :)
 
-When it's done you'll **either** (a) be asked to reboot or (b) see a message on the last line that says something to the effect of "Your firmware is already up to date". Whatever it says, just reboot anyway.
+When it's done, the system should prompt you to reboot, as well as give you instructions on how to start retroarch after your machine starts up and you log in again. Just for reference you run retroarch using the following command:
 
-After that's done, run the `post-update.sh` script, which will install some emulation software binaries and copy the RetroArch config file to your home directory with options that have been found to work *reasonably* well for the Raspberry Pi:
-
-    cd ~/retroarch-nes-raspi-build
-    ./post-update.sh
-    
-When that's done, you should see a message on your screen explaining how to launch RetroArch.
+`retroarch <filename.nes> -c ~/.config/retroarch/retroarch.cfg -v`
 
 ## Play!
 
 ...and please report issues that you run into. :)
 
+**But where are the game ROMs?**
+
+You'll have to find those on your own. Please don't email me asking for ROMs.
+
 **Controls:**
 
-* Arrow keys to go up/down/left/right
-* Start: Enter key
-* Select: Right-shift key
-* A button: X
-* B button: Z
+[This awesome controller I got from Amazon](http://www.amazon.com/gp/product/B00281PFQI) is the one I'm using now. If you configure your controller correctly the first time, then the retroarch config that I supply with this project should work out-of-the-box for you.
 
 ## Options
 
@@ -68,6 +64,6 @@ Email me at jefflunt@gmail.com with your tests, tweaks, and experiences using th
 ## Current known issues
 
 * **Config options**: You can, of course, tweak the config options anyway you like and report your results back to me. This repo provides (and automatically copies) a provided config file for you that should get you basically up and running, even if it's not a perfect experience.
-* **Sound**: Audio in games currently ranges from "pretty close but not perfect" to "basically unplayable" - it's pretty bad. If the audio is killing you and you would rather just do without it, you can disable audio altogether by editing the `~/.config/retroarch/retroarch.cfg` file and change the line `audio_enable = "true"` to `audio_enbale = "false"`
-* **Controls**: There are no controller drivers installed to get you going. RetroArch includes a utility called `retroarch-joyconfig` that you can use if you have a gamepad/arcade stick lying around with a USB plug on it. I can't promise that any particular controller will work, but you can try it out.
-* **Some games just flat out don't work**. This seems to be at least somewhat related to the memory usage, what you set the `memory_split` to, and how that affects performance and/or whether certain games will even start up and work. I'm looking into options for this, including distros that are leaner and use less memory to begin with, which might help. No promises right now.
+* **Sound**: Audio in games currently ranges from "pretty close but not perfect" to "basically unplayable." I'll be honest, it's pretty bad. If the audio is killing you and you would rather just do without it, you can disable audio altogether by editing the `~/.config/retroarch/retroarch.cfg` file and change the line `audio_enable = "true"` to `audio_enbale = "false"`
+* **Controls**: The default controller drivers should work fine, according to my testing. I specifically used [this awesome controller I got from Amazon](http://www.amazon.com/gp/product/B00281PFQI) which is an exact replica (look and feel) of the original NES controller. The default config file is not built to use this controller, after it's configured during the install. If you buy and use this controller (I highly recommend it), you will have **close** to an "sit down and play" experience.
+* **Some games just flat out don't work**. This seems to be at least somewhat related to the memory usage, what you set the `memory_split` to, and how that affects performance and/or whether certain games will even start up and work. I'm looking into options for this, including distros that are leaner and use less memory to begin with, which might help. No promises on this front right now.

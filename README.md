@@ -34,7 +34,7 @@ Then, clone this project somewhere (your home directory is a good option) and ru
     cd retroarch-nes-raspi-build
     ./pre-update.sh
 
-This will run some updates. It may take a long time (30 minutes?), and maybe longer if your on a DSL or slower connection. Be patient. :)
+This will run some updates. It may take a long time (30 minutes?), and maybe longer if you're on a DSL or slower connection. Be patient. :)
 
 When it's done you'll **either** (a) be asked to reboot or (b) see a message on the last line that says something to the effect of "Your firmware is already up to date". Whatever it says, just reboot anyway.
 

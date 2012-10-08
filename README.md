@@ -12,8 +12,7 @@ The great thing about this is that a custom software stack for emulation is only
 
 1. Raspberry Pi Rev B. board (the one with the ethernet jack)
 2. Power supply for your Pi. It should be at least **5.0 volts, 1 amp (or 1000 milliamps)**. I use the outlet-to-USB adapter I got with the iPad - it's 2 amps - more than enough. I believe the power supply for the Google Nexus 7 tablet is also sufficiently powerful. Your typical cell phone wall outlet power supply might also be sufficient, but double check the power output printed on the power supply itself.
-3. SD card imaged with the 2012-08-16-wheezy-raspbian image (or possibly newer than this - this is the default, fully supported distro)
-4. An available SD card that's at least 4GiB in size
+3. SD card (4 GiB minimum size) imaged with the 2012-08-16-wheezy-raspbian image (or possibly newer than this - this is the default, fully supported distro)
 
 ## Build
 

@@ -1,3 +1,5 @@
+![glint - retro emulation for the masses](http://karmanebula.squarespace.com/storage/design/glint.png "glint - retro emulation for the masses")
+
 ## Goals and Philosophy
 
 It's my desire to build a project that allows you to convert your Raspberry Pi into a great little emulation box. I'm most interested in NES emulation myself, but I'm open to discussing other systems supported by RetroArch (and others, if you're running your own projects).

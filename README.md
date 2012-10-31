@@ -1,5 +1,12 @@
 ![glint - retro emulation for the masses](http://karmanebula.squarespace.com/storage/design/glint.png "glint - retro emulation for the masses")
 
+## Help and news
+
+I've setup two Google groups to help users.
+
+* [glint help](https://groups.google.com/forum/?hl=en&fromgroups=#!forum/glint-help) - Q&A for glint issues
+* [glint news](https://groups.google.com/forum/?hl=en&fromgroups=#!forum/glint-news) - low traffic, official announcements of glint releases and updates
+
 ## Goals and Philosophy
 
 It's my desire to build a project that allows you to convert your Raspberry Pi into a great little emulation box. I'm most interested in NES emulation myself, but I'm open to discussing other systems supported by RetroArch (and others, if you're running your own projects).
@@ -57,13 +64,6 @@ You'll have to find those on your own. Please don't email me asking for ROMs.
 ## Options
 
 * Overclocking: I haven't done much with overclocking yet. I'd prefer not to overvolt as well, as I don't want anyone voiding their warranty in order to try this out. However, if the project gets to the point where we're 99% of the way there, and just a slight overclock will get us the remaining 1% of performance that we need to get a near-perfect emulation experience, I'm up for trying it.
-
-## Help and news
-
-I've setup two Google groups to help users.
-
-* [glint help](https://groups.google.com/forum/?hl=en&fromgroups=#!forum/glint-help) - Q&A for glint issues
-* [glint news](https://groups.google.com/forum/?hl=en&fromgroups=#!forum/glint-news) - low traffic, official announcements of glint releases and updates
 
 ## Current known issues
 

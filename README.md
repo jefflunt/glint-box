@@ -58,9 +58,12 @@ You'll have to find those on your own. Please don't email me asking for ROMs.
 
 * Overclocking: I haven't done much with overclocking yet. I'd prefer not to overvolt as well, as I don't want anyone voiding their warranty in order to try this out. However, if the project gets to the point where we're 99% of the way there, and just a slight overclock will get us the remaining 1% of performance that we need to get a near-perfect emulation experience, I'm up for trying it.
 
-## Contact
+## Help and news
 
-Email me at jefflunt@gmail.com with your tests, tweaks, and experiences using this and RetroArch in general on Raspberry Pi. I'd love to collaborate and try things out to see if we can get "The Little Raspberry That Could" to deliver an awesome NES gaming experience.
+I've setup two Google groups to help users.
+
+* [glint help](https://groups.google.com/forum/?hl=en&fromgroups=#!forum/glint-help) - Q&A for glint issues
+* [glint news](https://groups.google.com/forum/?hl=en&fromgroups=#!forum/glint-news) - low traffic, official announcements of glint releases and updates
 
 ## Current known issues
 

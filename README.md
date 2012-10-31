@@ -1,11 +1,13 @@
 ![glint - retro emulation for the masses](http://karmanebula.squarespace.com/storage/design/glint.png "glint - retro emulation for the masses")
 
-## Help and news
+## Help, news, and contact info
 
 I've setup two Google groups to help users.
 
-* [glint help](https://groups.google.com/forum/?hl=en&fromgroups=#!forum/glint-help) - Q&A for glint issues
+* [glint help](https://groups.google.com/forum/?hl=en&fromgroups=#!forum/glint-help) - Q&A for glint box builders and modders
 * [glint news](https://groups.google.com/forum/?hl=en&fromgroups=#!forum/glint-news) - low traffic, official announcements of glint releases and updates
+
+You can also reach me at <jefflunt@gmail.com> if you like, but if you're looking for support with building or modding a glint box (as opposed to a GitHub coding issue), please forward your question to the glint help group referenced above.
 
 ## Goals and Philosophy
 

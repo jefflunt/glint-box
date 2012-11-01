@@ -1,4 +1,4 @@
-![glint - retro emulation for the masses](http://karmanebula.squarespace.com/storage/design/glint.png "glint - retro emulation for the masses")
+![glint - retro emulation for the masses](https://s3-us-west-2.amazonaws.com/glint-images/glint.png "glint - retro emulation for the masses")
 
 ## Help, news, and contact info
 

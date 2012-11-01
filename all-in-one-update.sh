@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # Update the root ca-certificates
 sudo apt-get -y install ca-certificates
 
@@ -20,7 +22,7 @@ jscal -c /dev/input/js0
 
 # Install RetroArch binaries
 
-sudo apt-get -y update; sudo apt-get -y install libretro-fceu retroarch
+sudo apt-get -y install libretro-fceu retroarch
 
 # Create config file for running RetroArch
 

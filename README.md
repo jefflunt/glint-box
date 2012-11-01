@@ -41,8 +41,8 @@ First, edit your `~/.profile` file, adding the following line the end (so RetroA
 Then, clone this project somewhere (your home directory is a good option) and run the `pre-update.sh` script
 
     cd ~
-    git clone git://github.com/normalocity/retroarch-nes-raspi-build.git
-    cd retroarch-nes-raspi-build
+    git clone https://github.com/normalocity/glint-nes.git
+    cd glint-nes
     ./all-in-one.sh
 
 This will run some updates. It may take a long time (30 minutes?), and maybe longer if you're on a DSL or slower connection. Be patient. :)

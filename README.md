@@ -37,11 +37,11 @@ After imaging your SD card, boot up your Raspberry Pi, login, and run the follow
 
 ## Play!
 
-Log into your Raspberry Pi, and type the following command (replacing the "<filename.nes>" with the name of your NES ROM file).
+Log into your Raspberry Pi, and type the following command (replacing the **filename.nes** with the name of your NES ROM file).
 
-`retroarch <filename.nes> -c ~/.config/retroarch/retroarch.cfg`
+`retroarch filename.nes -c ~/.config/retroarch/retroarch.cfg`
 
-...and please report issues that you run into. :)
+Please [report issues](https://groups.google.com/forum/?hl=en&fromgroups=#!forum/glint-help) that you run into. :)
 
 **But where are the game ROMs?**
 

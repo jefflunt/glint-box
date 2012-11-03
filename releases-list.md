@@ -1,10 +1,10 @@
-## STABLE glint-nes downloads (newest on top)
+## STABLE glint-nes downloads
 
-**There are no stable releases yet. Please download a BETA image, try it out, and report back any issues you have.**
+*There are no stable releases yet. Please download a BETA image, try it out, and report back any issues you have.*
 
 <hr />
 
-## BETA glint-nes downloads (newest on top)
+## BETA glint-nes downloads
 
 <table id="release-list">
   <thead>

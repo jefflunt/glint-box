@@ -29,9 +29,12 @@ jscal -c /dev/input/js0
 sudo apt-get -y install libretro-fceu retroarch
 
 # Create config file for running RetroArch
-
 mkdir -p ~/.config/retroarch/
-cp retroarch.cfg ~/.config/retroarch/
+cd ~/.config/retroarch/
+curl -L https://raw.github.com/normalocity/glint-nes/master/retroarch.cfg > retroarch.cfg
+
+# Move back to home directory
+cd ~
 
 echo ""
 echo ""

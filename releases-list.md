@@ -1,4 +1,4 @@
-## glint-nes downloads (newest on top)
+## BETA glint-nes downloads (newest on top)
 
 <table id="release-list">
   <thead>

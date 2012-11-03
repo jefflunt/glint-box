@@ -29,8 +29,8 @@
     
     <tr>
       <td>2012-11-01</td>
-      <td><a href="https://s3-us-west-2.amazonaws.com/glint-images/2012-11-01-glint-nes.torrent">torrent</a></td>
-      <td><a href="https://s3-us-west-2.amazonaws.com/glint-images/2012-11-01-glint-nes.img">download</a></td>
+      <td>No longer available</td>
+      <td>No longer available</td>
       <td>Raspbian 2012-09-18</td>
       <td>8 GB</td>
       <td><a href="#2012-11-01-problems"><img src="/storage/design/red-exclamation-15px.png" /></a></td>

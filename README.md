@@ -23,24 +23,13 @@ The great thing about this is that a custom software stack for emulation is only
 
 1. Raspberry Pi Rev B. board (the one with the ethernet jack)
 2. Power supply for your Pi. It should be at least **5.0 volts, 1 amp (or 1000 milliamps)**. I use the outlet-to-USB adapter I got with the iPad - it's 2 amps - more than enough. I believe the power supply for the Google Nexus 7 tablet is also sufficiently powerful. Your typical cell phone wall outlet power supply might also be sufficient, but double check the power output printed on the power supply itself.
-3. 4GB SD card (minimum size) imaged with [the latest glint-nes image](http://karmanebula.com/glint-downloads/)
-
-## Build
-
-Log into your Raspberry Pi:
-
-* user: `pi`
-* pass: `raspberry`
-
-Make sure your Pi is connected to the internet
-
-* Type `curl -L https://raw.github.com/normalocity/glint-nes/master/all-in-one-install.sh | bash`
-
-This runs an automated script to get everything downloaded and installed. When it's done, the system should prompt you to reboot, as well as give you instructions on how to start `retroarch` after your machine starts up and you log in again. Just for reference you run `retroarch` using the following command:
-
-`retroarch <filename.nes> -c ~/.config/retroarch/retroarch.cfg`
+3. 4GB SD card (minimum size) imaged with [the latest stable glint-nes image](http://karmanebula.com/glint-downloads/)
 
 ## Play!
+
+Log into your Raspberry Pi, and type the following command (replacing the "<filename.nes>" with the name of your NES ROM file).
+
+`retroarch <filename.nes> -c ~/.config/retroarch/retroarch.cfg`
 
 ...and please report issues that you run into. :)
 

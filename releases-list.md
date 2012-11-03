@@ -1,3 +1,9 @@
+## STABLE glint-nes downloads (newest on top)
+
+**There are no stable releases yet. Please download a BETA image, try it out, and report back any issues you have.**
+
+<hr />
+
 ## BETA glint-nes downloads (newest on top)
 
 <table id="release-list">
@@ -34,7 +40,7 @@
 
 <hr />
 
-### Problems with 2012-11-02-glint-nes image
+### Problems with BETA 2012-11-02-glint-nes image
 <table id="#2012-11-02-problems" class="release-problems">
   <tbody>
     <td><img src="/storage/design/red-exclamation-15px.png" /></td>
@@ -43,7 +49,7 @@
 </table>
 <br />
 
-### Problems with 2012-11-01-glint-nes image
+### Problems with BETA 2012-11-01-glint-nes image
 <table id="#2012-11-02-problems" class="release-problems">
   <tbody>
     <td><img src="/storage/design/red-exclamation-15px.png" /></td>

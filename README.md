@@ -23,7 +23,17 @@ The great thing about this is that a custom software stack for emulation is only
 
 1. Raspberry Pi Rev B. board (the one with the ethernet jack)
 2. Power supply for your Pi. It should be at least **5.0 volts, 1 amp (or 1000 milliamps)**. I use the outlet-to-USB adapter I got with the iPad - it's 2 amps - more than enough. I believe the power supply for the Google Nexus 7 tablet is also sufficiently powerful. Your typical cell phone wall outlet power supply might also be sufficient, but double check the power output printed on the power supply itself.
-3. 4GB SD card (minimum size) imaged with [the latest stable glint-nes image](http://karmanebula.com/glint-downloads/)
+3. 4GB SD card (minimum size) imaged with **the 2012-10-28-wheezy-raspbian image** from [the Raspberry Pi downloads page](http://www.raspberrypi.org/downloads).
+
+## Build
+
+After imaging your SD card, boot up your Raspberry Pi, login, and run the following command:
+
+    curl -L https://raw.github.com/normalocity/glint-nes/master/install.sh | bash
+
+* This will grab the install script and run it on your Raspberry Pi.
+* At the end of the script, the Raspberry Pi will reboot
+* Just copy your ROMs onto the Raspberry Pi and go!
 
 ## Play!
 

@@ -1,8 +1,7 @@
 #!/bin/bash
 
 # Update pi user's profile, and Raspberry Pi config file
-echo "export LD_LIBRARY_PATH=/opt/vc/lib" >> .profile
-
+curl -L https://raw.github.com/normalocity/glint-nes/master/.profile > ~/.profile
 curl -L https://raw.github.com/normalocity/glint-nes/master/raspberry-pi-config.txt > /tmp/config.txt
 sudo mv /tmp/config.txt /boot/config.txt
 
@@ -16,15 +15,15 @@ sudo apt-get -y update
 sudo apt-get -y upgrade
 
 # Install joystick/joypad binaries
-sudo apt-get -y install joystick
-js
-
-echo ""
-echo ""
-echo "***** We're now going to configure your controller."
-echo ""
-read -p "***** PLUG IT IN NOW and press [Enter] to continue..."
-jscal -c /dev/input/js0
+# sudo apt-get -y install joystick
+# js
+# 
+# echo ""
+# echo ""
+# echo "***** We're now going to configure your controller."
+# echo ""
+# read -p "***** PLUG IT IN NOW and press [Enter] to continue..."
+# jscal -c /dev/input/js0
 
 # Install RetroArch binaries
 
@@ -34,9 +33,6 @@ sudo apt-get -y install libretro-fceu retroarch
 mkdir -p ~/.config/retroarch/
 cd ~/.config/retroarch/
 curl -L https://raw.github.com/normalocity/glint-nes/master/retroarch.cfg > retroarch.cfg
-
-# Move back to home directory
-cd ~
 
 echo ""
 echo ""

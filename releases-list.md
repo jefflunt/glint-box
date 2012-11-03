@@ -9,7 +9,7 @@
 <table id="release-list">
   <thead>
     <tr>
-      <th>Problems</th>
+      <th>Problems?</th>
       <th>Build date</th>
       <th>Torrent</th>
       <th>Dowload</th>
@@ -19,7 +19,7 @@
   </thead>
   <tbody>
     <tr>
-      <td><a href="#2012-11-02-problems"><img src="/storage/design/red-exclamation-15px.png" /></a></td>
+      <td><a href="#2012-11-02-problems"><img src="/storage/design/red-exclamation-15px.png" /> Won't boot</a></td>
       <td>2012-11-02</td>
       <td><a href="https://s3-us-west-2.amazonaws.com/glint-images/2012-11-02-glint-nes.torrent">torrent</a></td>
       <td><a href="https://s3-us-west-2.amazonaws.com/glint-images/2012-11-02-glint-nes.img">download</a></td>
@@ -28,7 +28,7 @@
     </tr>
     
     <tr>
-      <td><a href="#2012-11-01-problems"><img src="/storage/design/red-exclamation-15px.png" /></a></td>
+      <td><a href="#2012-11-01-problems"><img src="/storage/design/red-exclamation-15px.png" /> Won't boot</a></td>
       <td>2012-11-01</td>
       <td>REMOVED</td>
       <td>REMOVED</td>

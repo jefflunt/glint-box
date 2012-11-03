@@ -23,31 +23,20 @@ The great thing about this is that a custom software stack for emulation is only
 
 1. Raspberry Pi Rev B. board (the one with the ethernet jack)
 2. Power supply for your Pi. It should be at least **5.0 volts, 1 amp (or 1000 milliamps)**. I use the outlet-to-USB adapter I got with the iPad - it's 2 amps - more than enough. I believe the power supply for the Google Nexus 7 tablet is also sufficiently powerful. Your typical cell phone wall outlet power supply might also be sufficient, but double check the power output printed on the power supply itself.
-3. SD card (4 GiB minimum size) imaged with the **2012-09-18-wheezy-raspbian** image
+3. 4GB SD card (minimum size) imaged with [the latest glint-nes image](http://karmanebula.com/glint-downloads/)
 
 ## Build
 
-Start with a freshly imaged Raspberry Pi SD card. When the Raspberry Pi first boots up you will see the config screen. Change the following options:
+Log into your Raspberry Pi:
 
-* Go to the "memory_split" section and change the option to "192 128MiB for ARM, 64 MiB for VideoCore"
-* Go to the "expand_rootfs" section and expand the root partition to fill your SD card. The standard 1.7GiB doesn't seem to be enough out of the box for `git` and all the other dependencies. I've run into problems during the very last steps where the last binary or two ran out of space, just before I was about to start up RetroArch. What a tease!
-* Go to the "overclock" option, skip past the warning, and set your Raspberry Pi to "Modest 800MHz ARM, 300MHz core, 400MHz SDRAM, 0 overvolt"
-* Changing the root filesystem (FS) size requires a reboot. When it prompts you to reboot, do it.
+* user: `pi`
+* pass: `raspberry`
 
-First, edit your `~/.profile` file, adding the following line the end (so RetroArch can find some needed libraries)
+Make sure your Pi is connected to the internet
 
-    export LD_LIBRARY_PATH=/opt/vc/lib
+* Type `curl -L https://raw.github.com/normalocity/glint-nes/master/all-in-one-install.sh | bash`
 
-Then, clone this project somewhere (your home directory is a good option) and run the `pre-update.sh` script
-
-    cd ~
-    git clone https://github.com/normalocity/glint-nes.git
-    cd glint-nes
-    ./all-in-one.sh
-
-This will run some updates. It may take a long time (30 minutes?), and maybe longer if you're on a DSL or slower connection. Be patient. :)
-
-When it's done, the system should prompt you to reboot, as well as give you instructions on how to start retroarch after your machine starts up and you log in again. Just for reference you run retroarch using the following command:
+This runs an automated script to get everything downloaded and installed. When it's done, the system should prompt you to reboot, as well as give you instructions on how to start `retroarch` after your machine starts up and you log in again. Just for reference you run `retroarch` using the following command:
 
 `retroarch <filename.nes> -c ~/.config/retroarch/retroarch.cfg`
 

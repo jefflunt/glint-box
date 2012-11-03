@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Update profile file
+echo "export LD_LIBRARY_PATH=/opt/vc/lib" >> .profile
+
 # Update the root ca-certificates
 sudo apt-get -y install ca-certificates
 

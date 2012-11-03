@@ -1,7 +1,10 @@
 #!/bin/bash
 
-# Update profile file
+# Update pi user's profile, and Raspberry Pi config file
 echo "export LD_LIBRARY_PATH=/opt/vc/lib" >> .profile
+
+curl -L https://raw.github.com/normalocity/glint-nes/master/raspberry-pi-config.txt > /tmp/config.txt
+sudo mv /tmp/config.txt /boot/config.txt
 
 # Update the root ca-certificates
 sudo apt-get -y install ca-certificates
@@ -11,13 +14,6 @@ echo "deb http://archive.changeover.za.net/raspbian wheezy main" | sudo tee /etc
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-key 2747C7CF
 sudo apt-get -y update
 sudo apt-get -y upgrade
-
-# Setup Raspberry Pi config
-curl -L https://raw.github.com/normalocity/glint-nes/master/retroarch.cfg > /tmp/config.txt
-sudo mv /tmp/config.txt /boot/config.txt
-
-# Temporarily commented out - might discard at some point
-#sudo apt-get -y dist-upgrade
 
 # Install joystick/joypad binaries
 sudo apt-get -y install joystick

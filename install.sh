@@ -12,11 +12,14 @@ sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-key 2747C7CF
 sudo apt-get -y update
 sudo apt-get -y upgrade
 
+# Setup Raspberry Pi config
+curl -L https://raw.github.com/normalocity/glint-nes/master/retroarch.cfg > /tmp/config.txt
+sudo mv /tmp/config.txt /boot/config.txt
+
 # Temporarily commented out - might discard at some point
 #sudo apt-get -y dist-upgrade
 
 # Install joystick/joypad binaries
-
 sudo apt-get -y install joystick
 js
 

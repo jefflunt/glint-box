@@ -13,11 +13,20 @@
       <th>Build date</th>
       <th>Torrent</th>
       <th>Dowload</th>
-      <th>Base OS</th>
+      <th>Built from</th>
       <th>Size</th>
     </tr>
   </thead>
   <tbody>
+    <tr>
+      <td>Pending tests</td>
+      <td>2012-11-03</td>
+      <td><a href="https://s3-us-west-2.amazonaws.com/glint-images/2012-11-03-glint-nes.torrent">torrent</a></td>
+      <td><a href="https://s3-us-west-2.amazonaws.com/glint-images/2012-11-03-glint-nes.img.zip">download</a></td>
+      <td>Raspbian 2012-10-28</td>
+      <td>500 MB</td>
+    </tr>
+    
     <tr>
       <td><a href="#2012-11-02-problems"><img src="/storage/design/red-exclamation-15px.png" /> Won't boot</a></td>
       <td>2012-11-02</td>
@@ -39,6 +48,15 @@
 </table>
 
 <hr />
+
+### Problems with BETA 2012-11-03-glint-nes image
+<table id="#2012-11-03-problems" class="release-problems">
+  <tbody>
+    <td>?</td>
+    <td>Currently being tested. Please download, experiment, and report back.</td>
+  </tbody>
+</table>
+<br />
 
 ### Problems with BETA 2012-11-02-glint-nes image
 <table id="#2012-11-02-problems" class="release-problems">

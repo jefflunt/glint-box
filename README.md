@@ -27,9 +27,10 @@ The great thing about this is that a custom software stack for emulation is only
 
 ## Build
 
-After imaging your SD card, boot up your Raspberry Pi, login, and run the following command:
+After imaging your SD card, boot up your Raspberry Pi, login, and then:
 
-    curl -L https://raw.github.com/normalocity/glint-nes/master/install.sh | bash
+* Configure your keyboard, and exit the config menu
+* Then, at the console, type: `curl -L https://raw.github.com/normalocity/glint-nes/master/install.sh | bash`
 
 * This will grab the install script and run it on your Raspberry Pi.
 * At the end of the script, the Raspberry Pi will reboot

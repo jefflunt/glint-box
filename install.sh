@@ -3,10 +3,10 @@
 # Update pi user's profile, Raspberry Pi config file, and auto-login inittab
 curl -L https://raw.github.com/normalocity/glint-nes/master/.profile > ~/.profile
 curl -L https://raw.github.com/normalocity/glint-nes/master/raspberry-pi-config.txt > /tmp/config.txt
+sudo mv /tmp/config.txt /boot/config.txt
+
 curl -L https://raw.github.com/normalocity/glint-nes/master/inittab > /tmp/inittab
 sudo mv /tmp/inittab /etc/inittab
-
-sudo mv /tmp/config.txt /boot/config.txt
 
 # Update the root ca-certificates
 sudo apt-get -y install ca-certificates
@@ -20,9 +20,22 @@ sudo apt-get -y upgrade
 # Install RetroArch binaries
 sudo apt-get -y install libretro-fceu retroarch
 
+# Build and install EmulationStation
+sudo apt-get install libsdl1.2-dev libboost-filesystem-dev libfreeimage-dev libfreetype6-dev libsdl-mixer1.2-dev
+cd
+git clone https://github.com/Aloshi/EmulationStation.git
+cd EmulationStation
+make
+cd
+
 # Create config file for running RetroArch
 mkdir -p ~/.config/retroarch/
 cd ~/.config/retroarch/
 curl -L https://raw.github.com/normalocity/glint-nes/master/retroarch.cfg > retroarch.cfg
 
+# Cleanup after yourself
+sudo apt-get autoremove
+sudo apt-get autoclean
+
+# Reboot
 sudo shutdown -r now

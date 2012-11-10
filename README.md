@@ -29,12 +29,10 @@ The great thing about this is that a custom software stack for emulation is only
 
 After imaging your SD card, boot up your Raspberry Pi, login, and then:
 
-* Configure your keyboard, and exit the config menu
+* Run `sudo raspi-config` and setup your keyboard. When you're done, select "Finish"
 * Then, at the console, type: `curl -L https://raw.github.com/normalocity/glint-nes/master/install.sh | bash`
 
-* This will grab the install script and run it on your Raspberry Pi.
-* At the end of the script, the Raspberry Pi will reboot
-* Just copy your ROMs onto the Raspberry Pi and go!
+This command runs a script from the project that downloads and installs everything you need, including config files and settings for the Raspberry Pi.
 
 ## Play!
 

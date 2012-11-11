@@ -30,10 +30,10 @@ curl -L https://raw.github.com/normalocity/glint-nes/master/glint-nes-splash.png
 sudo mv /tmp/splash.png > /etc/splash.png
 
 curl -L https://raw.github.com/normalocity/glint-nes/master/glint-splash > /tmp/glint-splash
-sudo mv /tmp/glint-splash /etc/init.d/glint-splash
+sudo mv /tmp/glint-splash /etc/init.d/a-splash
 
-sudo chmod a+x /etc/init.d/glint-splash
-sudo insserv /etc/init.d/glint-splash
+sudo chmod a+x /etc/init.d/a-splash
+sudo insserv /etc/init.d/a-splash
 
 # Create config file for running RetroArch
 mkdir -p ~/.config/retroarch/

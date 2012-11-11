@@ -3,9 +3,11 @@
 # Update pi user's profile, Raspberry Pi config file, and auto-login inittab
 curl -L https://raw.github.com/normalocity/glint-nes/master/.profile > ~/.profile
 curl -L https://raw.github.com/normalocity/glint-nes/master/raspberry-pi-config.txt > /tmp/config.txt
+sudo mv /boot/config.txt /boot/config.txt.backup
 sudo mv /tmp/config.txt /boot/config.txt
 
 curl -L https://raw.github.com/normalocity/glint-nes/master/inittab > /tmp/inittab
+sudo mv /etc/inittab /etc/inittab.backup
 sudo mv /tmp/inittab /etc/inittab
 
 # Update the root ca-certificates and the already installed packages

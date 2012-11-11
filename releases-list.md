@@ -21,8 +21,17 @@
   </thead>
   <tbody>
     <tr>
+      <td>2012-11-11</td>
+      <td>?? <a href="#2012-11-11-problems">Pending tests</a></td>
+      <td><a href="https://s3-us-west-2.amazonaws.com/glint-images/2012-11-11-glint-nes.torrent">torrent</a></td>
+      <td>Coming soon</td>
+      <td>Raspbian 2012-10-28</td>
+      <td>565 MB</td>
+    </tr>
+
+    <tr>
       <td>2012-11-05</td>
-      <td>?? <a href="#2012-11-05-problems">Pending tests</a></td>
+      <td><img src="/storage/design/yellow-exclamation-15px.png" /><a href="#2012-11-05-problems"> Limited audio issues. Most games working well.</a></td>
       <td><a href="https://s3-us-west-2.amazonaws.com/glint-images/2012-11-05-glint-nes.torrent">torrent</a></td>
       <td><a href="https://s3-us-west-2.amazonaws.com/glint-images/2012-11-05-glint-nes.img.zip">download</a></td>
       <td>Raspbian 2012-10-28</td>
@@ -60,6 +69,23 @@
 
 <hr />
 
+### Notes for BETA 2012-11-11-glint-nes image
+<table id="2012-11-11-problems" class="release-problems">
+  <tbody>
+    <td></td>
+    <td>
+      <ul class="compact-list">
+        <li>Auto-login of "pi" user - not password is required any longer</li>
+        <li>SSH server is disabled</li>
+        <li>US English default keyboard layout is enabled (you must change this if you do not use a US keyboard)</li>
+        <li>Even more games working well. See updated <a href="http://karmanebula.com/game-support">game support list</a></li>
+        <li>Currently being tested. Please download, experiment, and report back.</li>        
+      </ul>
+    </td>
+  </tbody>
+</table>
+
+
 ### Notes for BETA 2012-11-05-glint-nes image
 <table id="2012-11-05-problems" class="release-problems">
   <tbody>
@@ -68,7 +94,7 @@
       <ul class="compact-list">
         <li>Many audio issues resolved. See updated <a href="http://karmanebula.com/game-support">game support list</a></li>
         <li>Full speed emulation for most games</li>
-        <li>Currently being tested. Please download, experiment, and report back.</li>        
+        <li><img src="/storage/design/yellow-exclamation-15px.png" /> Limited audio issues. Most games working well.</li>        
       </ul>
     </td>
   </tbody>

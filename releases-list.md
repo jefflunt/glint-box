@@ -24,7 +24,7 @@
       <td>2012-11-11</td>
       <td>?? <a href="#2012-11-11-problems">Pending tests</a></td>
       <td><a href="https://s3-us-west-2.amazonaws.com/glint-images/2012-11-11-glint-nes.torrent">torrent</a></td>
-      <td>Coming soon</td>
+      <td><a href="https://s3-us-west-2.amazonaws.com/glint-images/2012-11-11-glint-nes.img.zip">download</a></td>
       <td>Raspbian 2012-10-28</td>
       <td>565 MB</td>
     </tr>

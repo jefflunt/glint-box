@@ -20,14 +20,6 @@ sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-key 2747C7CF
 # Install RetroArch binaries
 sudo apt-get -y install libretro-fceu retroarch
 
-# Build and install EmulationStation
-sudo apt-get install libsdl1.2-dev libboost-filesystem-dev libfreeimage-dev libfreetype6-dev libsdl-mixer1.2-dev
-cd
-git clone https://github.com/Aloshi/EmulationStation.git
-cd EmulationStation
-make
-cd
-
 # Create config file for running RetroArch
 mkdir -p ~/.config/retroarch/
 cd ~/.config/retroarch/

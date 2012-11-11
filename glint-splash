@@ -12,7 +12,6 @@
 
 
 do_start () {
-
     /usr/bin/fbi -T 1 -noverbose -a /etc/splash.png    
     exit 0
 }

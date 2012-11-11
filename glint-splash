@@ -12,8 +12,8 @@
 
 
 do_start () {
+
     /usr/bin/fbi -T 1 -noverbose -a /etc/splash.png    
-    clear
     exit 0
 }
 
@@ -26,7 +26,7 @@ case "$1" in
     exit 3
     ;;
   stop)
-    exit 0
+    # No-op
     ;;
   status)
     exit 0

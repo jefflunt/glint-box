@@ -23,17 +23,17 @@ sudo apt-get -y upgrade
 # Install RetroArch binaries
 sudo apt-get -y install libretro-fceu retroarch
 
-# Custom splash screen stuff
+# Custom splash screen stuff - disabled for now because it's unstable
 # From: http://raspberrypi.stackexchange.com/questions/1214/how-to-add-custom-loading-screen
-sudo apt-get -y install fbi
-curl -L https://raw.github.com/normalocity/glint-nes/master/glint-nes-splash.png > /tmp/splash.png
-sudo mv /tmp/splash.png > /etc/splash.png
-
-curl -L https://raw.github.com/normalocity/glint-nes/master/glint-splash > /tmp/glint-splash
-sudo mv /tmp/glint-splash /etc/init.d/aaasplash
-
-sudo chmod a+x /etc/init.d/aaasplash
-sudo insserv /etc/init.d/aaasplash
+# sudo apt-get -y install fbi
+# curl -L https://raw.github.com/normalocity/glint-nes/master/glint-nes-splash.png > /tmp/splash.png
+# sudo mv /tmp/splash.png > /etc/splash.png
+# 
+# curl -L https://raw.github.com/normalocity/glint-nes/master/glint-splash > /tmp/glint-splash
+# sudo mv /tmp/glint-splash /etc/init.d/aaasplash
+# 
+# sudo chmod a+x /etc/init.d/aaasplash
+# sudo insserv /etc/init.d/aaasplash
 
 # Create config file for running RetroArch
 mkdir -p ~/.config/retroarch/

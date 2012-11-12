@@ -1,0 +1,3 @@
+# List of modules to initialize on startup
+
+snd-bcm2835

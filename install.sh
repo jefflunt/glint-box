@@ -22,8 +22,6 @@ apt-get -y update
 apt-get -y upgrade
 # end DON'T
 
-# Install curl, which isn't installed by default
-
 # Install RetroArch binaries
 apt-get -y install libretro-fceu retroarch
 

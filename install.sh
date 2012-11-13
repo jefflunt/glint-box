@@ -1,12 +1,12 @@
 #!/bin/bash
 
 # Update pi user's profile, Raspberry Pi config file, and auto-login inittab
-curl -L https://raw.github.com/normalocity/glint-nes/wheezy-min/.profile > ~/.profile
-curl -L https://raw.github.com/normalocity/glint-nes/wheezy-min/raspberry-pi-config.txt > /tmp/config.txt
+curl -L https://raw.github.com/normalocity/glint-nes/wheezy-min/config_and_scripts/.profile > ~/.profile
+curl -L https://raw.github.com/normalocity/glint-nes/wheezy-min/config_and_scripts/raspberry-pi-config.txt > /tmp/config.txt
 mv /boot/config.txt /boot/config.txt.backup
 mv /tmp/config.txt /boot/config.txt
 
-curl -L https://raw.github.com/normalocity/glint-nes/wheezy-min/inittab > /tmp/inittab
+curl -L https://raw.github.com/normalocity/glint-nes/wheezy-min/config_and_scripts/inittab > /tmp/inittab
 mv /etc/inittab /etc/inittab.backup
 mv /tmp/inittab /etc/inittab
 
@@ -26,7 +26,7 @@ apt-get -y upgrade
 apt-get -y install libretro-fceu retroarch
 
 # EmulationStation dependencies
-sudo apt-get git-core install libsdl1.2-dev libboost-filesystem-dev libfreeimage-dev libfreetype6-dev libsdl-mixer1.2-dev
+apt-get -y install build-essential git-core libsdl1.2-dev libboost-filesystem-dev libfreeimage-dev libfreetype6-dev libsdl-mixer1.2-dev
 git clone https://github.com/normalocity/EmulationStation.git
 cd EmulationStation
 make
@@ -38,7 +38,7 @@ cd
 # curl -L https://raw.github.com/normalocity/glint-nes/wheezy-min/glint-nes-splash.png > /tmp/splash.png
 # mv /tmp/splash.png > /etc/splash.png
 # 
-# curl -L https://raw.github.com/normalocity/glint-nes/wheezy-min/glint-splash > /tmp/glint-splash
+# curl -L https://raw.github.com/normalocity/glint-nes/wheezy-min/config_and_scripts/glint-splash > /tmp/glint-splash
 # mv /tmp/glint-splash /etc/init.d/aaasplash
 # 
 # chmod a+x /etc/init.d/aaasplash
@@ -47,10 +47,10 @@ cd
 # Create config file for running RetroArch
 mkdir -p ~/.config/retroarch/
 cd ~/.config/retroarch/
-curl -L https://raw.github.com/normalocity/glint-nes/wheezy-min/retroarch.cfg > retroarch.cfg
+curl -L https://raw.github.com/normalocity/glint-nes/wheezy-min/config_and_scripts/retroarch.cfg > retroarch.cfg
 
 # Setup audio module
-curl -L https://raw.github.com/normalocity/glint-nes/wheezy-min/modules > /etc/modules
+curl -L https://raw.github.com/normalocity/glint-nes/wheezy-min/config_and_scripts/modules > /etc/modules
 
 # Set 192/64 memory split
 cp /boot/arm192_start.elf /boot/start.elf

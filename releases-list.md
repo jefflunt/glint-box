@@ -25,7 +25,7 @@
       <td><img src="/storage/design/yellow-exclamation-15px.png" /> <a href="#2012-11-11-problems">Some keyboard issues :(</a></td>
       <td><a href="https://s3-us-west-2.amazonaws.com/glint-images/2012-11-11-glint-nes.torrent">torrent</a></td>
       <td><a href="https://s3-us-west-2.amazonaws.com/glint-images/2012-11-11-glint-nes.img.zip">download</a></td>
-      <td>Raspbian 2012-10-28</td>
+      <td><a href="http://downloads.raspberrypi.org/images/raspbian/2012-10-28-wheezy-raspbian/2012-10-28-wheezy-raspbian.zip">Raspbian 2012-10-28</a></td>
       <td>565 MB</td>
     </tr>
 
@@ -34,7 +34,7 @@
       <td><img src="/storage/design/yellow-exclamation-15px.png" /><a href="#2012-11-05-problems"> Limited audio issues. Most games working well.</a></td>
       <td><a href="https://s3-us-west-2.amazonaws.com/glint-images/2012-11-05-glint-nes.torrent">torrent</a></td>
       <td><a href="https://s3-us-west-2.amazonaws.com/glint-images/2012-11-05-glint-nes.img.zip">download</a></td>
-      <td>Raspbian 2012-10-28</td>
+      <td><a href="http://downloads.raspberrypi.org/images/raspbian/2012-10-28-wheezy-raspbian/2012-10-28-wheezy-raspbian.zip">Raspbian 2012-10-28</a></td>
       <td>535 MB</td>
     </tr>
 
@@ -43,7 +43,7 @@
       <td><a href="#2012-11-03-problems"><img src="/storage/design/yellow-exclamation-15px.png" /> Sound glitches on many games</a></td>
       <td><a href="https://s3-us-west-2.amazonaws.com/glint-images/2012-11-03-glint-nes.torrent">torrent</a></td>
       <td><a href="https://s3-us-west-2.amazonaws.com/glint-images/2012-11-03-glint-nes.img.zip">download</a></td>
-      <td>Raspbian 2012-10-28</td>
+      <td><a href="http://downloads.raspberrypi.org/images/raspbian/2012-10-28-wheezy-raspbian/2012-10-28-wheezy-raspbian.zip">Raspbian 2012-10-28</a></td>
       <td>500 MB</td>
     </tr>
     

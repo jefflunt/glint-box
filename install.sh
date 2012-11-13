@@ -17,13 +17,22 @@ apt-get -y install ca-certificates libxv1
 echo "deb http://archive.changeover.za.net/raspbian wheezy main" | tee /etc/apt/sources.list.d/changeover.list
 apt-key adv --keyserver keyserver.ubuntu.com --recv-key 2747C7CF
 
-# DON'T move this line to anyplace BEFORE the addition of the apt-key
+# DON'T move this section to anyplace BEFORE the addition of the apt-key for retroarch binary, otherwise it will break
 apt-get -y update
 apt-get -y upgrade
 # end DON'T
 
+# Install curl, which isn't installed by default
+
 # Install RetroArch binaries
 apt-get -y install libretro-fceu retroarch
+
+# EmulationStation dependencies
+sudo apt-get git-core install libsdl1.2-dev libboost-filesystem-dev libfreeimage-dev libfreetype6-dev libsdl-mixer1.2-dev
+git clone https://github.com/normalocity/EmulationStation.git
+cd EmulationStation
+make
+cd
 
 # Custom splash screen stuff - disabled for now because it's unstable
 # From: http://raspberrypi.stackexchange.com/questions/1214/how-to-add-custom-loading-screen
@@ -46,7 +55,6 @@ curl -L https://raw.github.com/normalocity/glint-nes/wheezy-min/retroarch.cfg > 
 curl -L https://raw.github.com/normalocity/glint-nes/wheezy-min/modules > /etc/modules
 
 # Set 192/64 memory split
-mv /boot/start.elf /boot/start.elf.backup
 cp /boot/arm192_start.elf /boot/start.elf
 
 # Cleanup after yourself

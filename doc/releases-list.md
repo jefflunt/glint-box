@@ -22,9 +22,9 @@
   <tbody>
     <tr>
       <td>2012-11-11</td>
-      <td><img src="/storage/design/yellow-exclamation-15px.png" /> <a href="#2012-11-11-problems">Some keyboard issues :(</a></td>
-      <td><a href="https://s3-us-west-2.amazonaws.com/glint-images/2012-11-11-glint-nes.torrent">torrent</a></td>
-      <td><a href="https://s3-us-west-2.amazonaws.com/glint-images/2012-11-11-glint-nes.img.zip">download</a></td>
+      <td><img src="/storage/design/red-exclamation-15px.png" /> <a href="#2012-11-11-problems">Breaking keyboard issues :(</a></td>
+      <td>REMOVED</td>
+      <td>REMOVED</td>
       <td><a href="http://downloads.raspberrypi.org/images/raspbian/2012-10-28-wheezy-raspbian/2012-10-28-wheezy-raspbian.zip">Raspbian 2012-10-28</a></td>
       <td>565 MB</td>
     </tr>
@@ -76,7 +76,7 @@
     <td>
       <ul class="compact-list">
         <li>Auto-login of "pi" user - not password is required any longer</li>
-        <li><img src="/storage/design/yellow-exclamation-15px.png" /> Keyboard seems to be disabled during emulation :( You have to press Ctrl+Alt+Del to gracefully shutdown the Pi to load another game</li>
+        <li><img src="/storage/design/red-exclamation-15px.png" /> Keyboard seems to be disabled during emulation :( You have to press Ctrl+Alt+Del to gracefully shutdown the Pi to load another game</li>
         <ul>
           <li>This seems to be a side effect of the auto-login feature recently added. I'm working to correct this.</li>
         </ul>

@@ -75,7 +75,7 @@
     <td></td>
     <td>
       <ul class="compact-list">
-        <li>Auto-login of "pi" user - not password is required any longer</li>
+        <li>Auto-login of "pi" user - no password is required any longer</li>
         <li><img src="/storage/design/red-exclamation-15px.png" /> Keyboard seems to be disabled during emulation :( You have to press Ctrl+Alt+Del to gracefully shutdown the Pi to load another game</li>
         <ul>
           <li>This seems to be a side effect of the auto-login feature recently added. I'm working to correct this.</li>

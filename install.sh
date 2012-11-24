@@ -26,14 +26,14 @@ apt-get -y upgrade
 apt-get -y install libretro-fceu retroarch
 
 # EmulationStation dependencies
+apt-get -y install build-essential git-core libsdl1.2-dev libboost-filesystem-dev libfreeimage-dev libfreetype6-dev libsdl-mixer1.2-dev
 mkdir -p /root/EmulationStation/
 curl -L https://s3-us-west2.amazonaws.com/glint-images/emulationstation > /root/EmulationStation/emulationstation
 mkdir -p .emulationstation
 mkdir -p /root/roms/
 curl -L https://raw.github.com/normalocity/glint-nes/wheezy-min/config_and_scripts/es_systems.cfg > /root/.emulationstation/es_systems.cfg
 curl -L https://raw.github.com/normalocity/glint-nes/wheezy-min/config_and_scripts/es_input.cfg > /root/.emulationstation/es_input.cfg
-# apt-get -y install build-essential git-core libsdl1.2-dev libboost-filesystem-dev libfreeimage-dev libfreetype6-dev libsdl-mixer1.2-dev
-#                                                           /---- are only these required to install from image? ---/ - that is, no SDL stuff
+
 
 # Custom splash screen stuff - disabled for now because it's unstable
 # From: http://raspberrypi.stackexchange.com/questions/1214/how-to-add-custom-loading-screen

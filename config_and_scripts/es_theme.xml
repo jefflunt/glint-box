@@ -1,0 +1,23 @@
+<theme>
+  <listSelectorColor>000000BB</listSelectorColor>
+  <listPrimaryColor>FFFFFF</listPrimaryColor>
+  <listSecondaryColor>BBBBBB</listSecondaryColor>
+
+  <fastSelectColor>FFFFFF</fastSelectColor>
+  <boxBackground>/home/pi/.emulationstation/glint-nes-fsbox-bg.png</boxBackground>
+  <boxBackgroundTiled />
+  <listLeftAlign />
+  <listOffsetX>0.1</listOffsetX>
+  <listTextOffsetX>0.05</listTextOffsetX>
+
+  <hideHeader />
+  <hideDividers />
+
+  <component>
+    <type>image</type>
+    <path>/home/pi/.emulationstation/glint-nes-bg.png</path>
+    <pos>0 0</pos>
+    <dim>1 1</dim>
+    <origin>0 0</origin>
+  </component>
+</theme>

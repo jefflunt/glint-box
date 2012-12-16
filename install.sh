@@ -26,11 +26,9 @@ apt-get -y upgrade
 apt-get -y install libretro-fceu retroarch
 
 # glint-es dependencies
-apt-get -y install git-core build-essential libsdl1.2-dev libboost-filesystem-dev libfreeimage-dev libfreetype6-dev libsdl-mixer1.2-dev
-cd ~
-git clone https://github.com/normalocity/glint-es.git
-cd glint-es
-make
+apt-get -y install build-essential libsdl1.2-dev libboost-filesystem-dev libfreeimage-dev libfreetype6-dev libsdl-mixer1.2-dev
+mkdir -p /root/glint-es
+curl -L https://raw.github.com/normalocity/glint-nes/wheezy-min/bin/glint-es > /root/glint-es/glint-es
 
 cd ~
 mkdir -p .emulationstation

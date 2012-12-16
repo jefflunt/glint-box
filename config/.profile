@@ -10,3 +10,5 @@ if [ -d "$HOME/bin" ]; then
 fi
 
 export LD_LIBRARY_PATH=/opt/vc/lib
+
+/root/glint-es/glint-es &> /root/gn.log

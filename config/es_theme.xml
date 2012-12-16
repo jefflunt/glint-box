@@ -4,7 +4,7 @@
   <listSecondaryColor>BBBBBB</listSecondaryColor>
 
   <fastSelectColor>FFFFFF</fastSelectColor>
-  <boxBackground>/home/pi/.emulationstation/glint-nes-fsbox-bg.png</boxBackground>
+  <boxBackground>/root/.emulationstation/glint-nes-fsbox-bg.png</boxBackground>
   <boxBackgroundTiled />
   <listLeftAlign />
   <listOffsetX>0.1</listOffsetX>
@@ -15,7 +15,7 @@
 
   <component>
     <type>image</type>
-    <path>/home/pi/.emulationstation/glint-nes-bg.png</path>
+    <path>/root/.emulationstation/glint-nes-bg.png</path>
     <pos>0 0</pos>
     <dim>1 1</dim>
     <origin>0 0</origin>

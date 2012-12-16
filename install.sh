@@ -39,6 +39,10 @@ curl -L https://raw.github.com/normalocity/glint-nes/wheezy-min/config/es_system
 curl -L https://raw.github.com/normalocity/glint-nes/wheezy-min/config/es_input.cfg > /root/.emulationstation/es_input.cfg
 curl -L https://raw.github.com/normalocity/glint-nes/wheezy-min/config/es_theme.xml > /root/.emulationstation/es_theme.xml
 
+curl -L https://raw.github.com/normalocity/glint-nes/wheezy-min/media/glint-font.ttf > /usr/share/fonts/truetype/glint-font.ttf
+curl -L https://raw.github.com/normalocity/glint-nes/wheezy-min/media/glint-nes-bg.png > /root/.emulationstation/glint-nes-bg.png
+curl -L https://raw.github.com/normalocity/glint-nes/wheezy-min/media/glint-nes-fsbox-bg.png > /root/.emulationstation/glint-nes-fsbox-bg.png
+
 # Custom splash screen stuff - disabled for now because it's unstable
 # From: http://raspberrypi.stackexchange.com/questions/1214/how-to-add-custom-loading-screen
 # apt-get -y install fbi

@@ -25,15 +25,19 @@ apt-get -y upgrade
 # Install RetroArch binaries
 apt-get -y install libretro-fceu retroarch
 
-# EmulationStation dependencies
-apt-get -y install build-essential git-core libsdl1.2-dev libboost-filesystem-dev libfreeimage-dev libfreetype6-dev libsdl-mixer1.2-dev
-mkdir -p /root/EmulationStation/
-curl -L https://s3-us-west2.amazonaws.com/glint-images/emulationstation > /root/EmulationStation/emulationstation
+# glint-es dependencies
+apt-get -y install git-core build-essential libsdl1.2-dev libboost-filesystem-dev libfreeimage-dev libfreetype6-dev libsdl-mixer1.2-dev
+cd ~
+git clone https://github.com/normalocity/glint-es.git
+cd glint-es
+make
+
+cd ~
 mkdir -p .emulationstation
-mkdir -p /root/roms/
+mkdir -p ~/roms/
 curl -L https://raw.github.com/normalocity/glint-nes/wheezy-min/config/es_systems.cfg > /root/.emulationstation/es_systems.cfg
 curl -L https://raw.github.com/normalocity/glint-nes/wheezy-min/config/es_input.cfg > /root/.emulationstation/es_input.cfg
-
+curl -L https://raw.github.com/normalocity/glint-nes/wheezy-min/config/es_theme.xml > /root/.emulationstation/es_theme.xml
 
 # Custom splash screen stuff - disabled for now because it's unstable
 # From: http://raspberrypi.stackexchange.com/questions/1214/how-to-add-custom-loading-screen

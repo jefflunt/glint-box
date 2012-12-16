@@ -1,4 +1,1 @@
-framebuffer_width=640
-framebuffer_height=480
-
 arm_freq=800

@@ -22,8 +22,9 @@ I wanted to publicly recognize a few people who have contributed to the project 
 * [Brandt Daniels](http://pomprocker.blogspot.com/) - Linux systems expert - has contributed some automation and scripting help, along with guidance on how to better integrate the project with the OS
 * [Alec "Aloshi" Lofquist](http://www.aloshi.com/) - Author of EmulationStation - **glint-nes** utilizes a customized version of [EmulationStation](https://github.com/Aloshi/EmulationStation), called **[glint-es](https://github.com/normalocity/glint-es)**, and Aloshi has been incredibly supportive and helpful in my programming efforts to customize it to glint-nes' needs
 * [@50437 on twitter](https://twitter.com/50437) - tester - has tested and provided feedback on the **glint-nes** project
-* ...and many other testers and moral supporters of the project who have elected to remain anonymous
 * [Jeff Lunt](http://jefflunt.com) - and I am your humble project organizer, primarily doing programming tasks and tweaking to get everything working together
+
+**I'd also like to thank** many testers and supporters of the project who have elected to remain anonymous. Your feedback and support have been greatly appreciated!
 
 ## How to get a working glint-nes box
 

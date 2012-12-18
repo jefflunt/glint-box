@@ -31,7 +31,7 @@ I wanted to publicly recognize a few people who have contributed to the project 
 
 **These paths are mutually exclusive** (i.e. pick only one, don't try to do both - they will conflict)
 
-* [Download a pre-build OS image](http://karmanebula.com/glint-downloads/), flash your SD card, and boot up your Pi. This is the least complicated approach and should give you a known working experience
+* [Download a pre-built OS image](http://karmanebula.com/glint-downloads/), flash your SD card, and boot up your Pi. This is the least complicated approach and should give you a known working experience
 * Follow the prerequisites and build instructions below
 
 ## Prerequisites
@@ -65,5 +65,5 @@ You'll have to find those on your own. Please don't email me asking for ROMs.
 ## Current known issues
 
 * **Config options**: You can, of course, tweak the config options anyway you like and report your results back to me. This repo provides (and automatically copies) a provided config file for you that should get you basically up and running, even if it's not a perfect experience.
-* **Sound/Speed**: Sound and emulation speed is still glitchy in some games, but we have a long list of games known to work well the the latest build. You can see the list [here.](http://karmanebula.com/game-support/)
+* **Sound/Speed**: Sound and emulation speed is still glitchy in some games, but we have [a long list of games](http://karmanebula.com/game-support/) known to work well the the latest build.
 * **Some games just flat out don't work**. A few of the most popular games (e.g. "Mike Tyson's Punchout") just work like crap. This game in particular seems to be especially troublesome on the Raspberry Pi's limited hardware. The reasons (as it's been explained to me) is that some elements of the NES hardware, while emulated, are extremely inefficient to emulate in software, and as such some games just won't work, or won't work very well. We're looking for tweaks and config changes to the emulator that we might be able to do that can lessen or eliminate this proble, but there are still issues. Again, if a specific game is incredibly important to you, please check [the supported games](http://karmanebula.com/game-support/) list to look for known issues.

@@ -22,7 +22,8 @@ I wanted to publicly recognize a few people who have contributed to the project 
 * [Brandt Daniels](http://pomprocker.blogspot.com/) - Linux systems expert - has contributed some automation and scripting help, along with guidance on how to better integrate the project with the OS
 * [Alec "Aloshi" Lofquist](http://www.aloshi.com/) - Author of EmulationStation - **glint-nes** utilizes a customized version of [EmulationStation](https://github.com/Aloshi/EmulationStation), called **[glint-es](https://github.com/normalocity/glint-es)**, and Aloshi has been incredibly supportive and helpful in my programming efforts to customize it to glint-nes' needs
 * [PetRockBlog](http://petrockblog.wordpress.com/) - one of the earliest and best blogs demonstrating how to convert the Raspberry Pi into an emulation box. This blog was extremely helpful in getting me started, as well as pointing me to a lot of the tools such as EmulationStation.
-* [@50437 on twitter](https://twitter.com/50437) - tester - has tested and provided feedback on the **glint-nes** project
+* Steven "Malachi" Venner - play tester - keeps the [games support list](http://karmanebula.com/game-support/) up to date
+* [@50437 on twitter](https://twitter.com/50437) - play tester
 * [Jeff Lunt](http://jefflunt.com) - and I am your humble project organizer, primarily doing programming tasks and tweaking to get everything working together
 
 **I'd also like to thank** many testers and supporters of the project who have elected to remain anonymous. Your feedback and support have been greatly appreciated!

@@ -42,14 +42,14 @@ curl -L https://raw.github.com/normalocity/glint-nes/master/media/glint-nes-bg.p
 curl -L https://raw.github.com/normalocity/glint-nes/master/media/glint-nes-fsbox-bg.png > /root/.emulationstation/glint-nes-fsbox-bg.png
 
 # USB drive support for easy ROM loading
-apt-get -y install udev autofs
-mkdir -p /mnt/usbdisk
-curl -L https://raw.github.com/normalocity/glint-nes/master/config/udev-custom.rules > /etc/udev/rules.d/00-custom.rules
-curl -L https://raw.github.com/normalocity/glint-nes/master/config/auto.master > /etc/auto.master
-curl -L https://raw.github.com/normalocity/glint-nes/master/config/auto.master > /etc/auto.ext-usb
-
-/etc/init.d/udev restart
-/etc/init.d/autofs restart
+# apt-get -y install udev autofs
+# mkdir -p /mnt/usbdisk
+# curl -L https://raw.github.com/normalocity/glint-nes/master/config/udev-custom.rules > /etc/udev/rules.d/00-custom.rules
+# curl -L https://raw.github.com/normalocity/glint-nes/master/config/auto.master > /etc/auto.master
+# curl -L https://raw.github.com/normalocity/glint-nes/master/config/auto.master > /etc/auto.ext-usb
+# 
+# /etc/init.d/udev restart
+# /etc/init.d/autofs restart
 
 # Custom splash screen stuff - disabled for now because it's unstable
 # From: http://raspberrypi.stackexchange.com/questions/1214/how-to-add-custom-loading-screen

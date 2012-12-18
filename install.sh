@@ -30,16 +30,15 @@ apt-get -y install build-essential libsdl1.2-dev libboost-filesystem-dev libfree
 mkdir -p /root/glint-es
 curl -L https://raw.github.com/normalocity/glint-nes/master/bin/glint-es > /root/glint-es/glint-es
 
-cd ~
-mkdir -p .emulationstation
-mkdir -p ~/roms/
-curl -L https://raw.github.com/normalocity/glint-nes/master/config/es_systems.cfg > /root/.emulationstation/es_systems.cfg
-curl -L https://raw.github.com/normalocity/glint-nes/master/config/es_input.cfg > /root/.emulationstation/es_input.cfg
-curl -L https://raw.github.com/normalocity/glint-nes/master/config/es_theme.xml > /root/.emulationstation/es_theme.xml
+mkdir -p /root/.glint-es
+mkdir -p /root/roms/
+curl -L https://raw.github.com/normalocity/glint-nes/master/config/es_systems.cfg > /root/.glint-es/es_systems.cfg
+curl -L https://raw.github.com/normalocity/glint-nes/master/config/es_input.cfg > /root/.glint-es/es_input.cfg
+curl -L https://raw.github.com/normalocity/glint-nes/master/config/es_theme.xml > /root/.glint-es/es_theme.xml
 
 curl -L https://raw.github.com/normalocity/glint-nes/master/media/glint-font.ttf > /usr/share/fonts/truetype/glint-font.ttf
-curl -L https://raw.github.com/normalocity/glint-nes/master/media/glint-nes-bg.png > /root/.emulationstation/glint-nes-bg.png
-curl -L https://raw.github.com/normalocity/glint-nes/master/media/glint-nes-fsbox-bg.png > /root/.emulationstation/glint-nes-fsbox-bg.png
+curl -L https://raw.github.com/normalocity/glint-nes/master/media/glint-nes-bg.png > /root/.glint-es/glint-nes-bg.png
+curl -L https://raw.github.com/normalocity/glint-nes/master/media/glint-nes-fsbox-bg.png > /root/.glint-es/glint-nes-fsbox-bg.png
 
 # USB drive support for easy ROM loading
 # apt-get -y install udev autofs
@@ -64,8 +63,8 @@ curl -L https://raw.github.com/normalocity/glint-nes/master/media/glint-nes-fsbo
 # insserv /etc/init.d/aaasplash
 
 # Create config file for running RetroArch
-mkdir -p ~/.config/retroarch/
-cd ~/.config/retroarch/
+mkdir -p /root/.config/retroarch/
+cd /root/.config/retroarch/
 curl -L https://raw.github.com/normalocity/glint-nes/master/config/retroarch.cfg > retroarch.cfg
 
 # Setup audio module

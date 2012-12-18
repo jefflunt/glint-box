@@ -11,4 +11,4 @@ fi
 
 export LD_LIBRARY_PATH=/opt/vc/lib
 
-/root/glint-es/glint-es &> /root/gn.log
+/root/glint-es/glint-es &> /var/log/glint/glint-es.log

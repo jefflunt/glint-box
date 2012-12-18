@@ -1,0 +1,1 @@
+usbdisk -fstype=auto :/dev/usbdisk1

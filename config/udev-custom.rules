@@ -1,0 +1,1 @@
+SUBSYSTEMS=="usb", KERNEL=="sd?[1-9]", SYMLINK+="usbdisk%n"

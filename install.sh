@@ -5,6 +5,7 @@ curl -L https://raw.github.com/normalocity/glint-nes/master/config/.profile > ~/
 curl -L https://raw.github.com/normalocity/glint-nes/master/config/raspberry-pi-config.txt > /tmp/config.txt
 mv /boot/config.txt /boot/config.txt.backup
 mv /tmp/config.txt /boot/config.txt
+mkdir -p /var/log/glint
 
 curl -L https://raw.github.com/normalocity/glint-nes/master/scripts/inittab > /tmp/inittab
 mv /etc/inittab /etc/inittab.backup
@@ -26,7 +27,7 @@ apt-get -y upgrade
 apt-get -y install libretro-fceu retroarch
 
 # glint-es dependencies
-apt-get -y install build-essential libsdl1.2-dev libboost-filesystem-dev libfreeimage-dev libfreetype6-dev libsdl-mixer1.2-dev
+apt-get -y install build-essential libsdl1.2-dev libboost-filesystem-dev libfreeimage-dev libfreetype6-dev
 mkdir -p /root/glint-es
 curl -L https://raw.github.com/normalocity/glint-nes/master/bin/glint-es > /root/glint-es/glint-es
 

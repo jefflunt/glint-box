@@ -30,6 +30,7 @@ apt-get -y install libretro-fceu retroarch
 apt-get -y install build-essential libsdl1.2-dev libboost-filesystem-dev libfreeimage-dev libfreetype6-dev
 mkdir -p /root/glint-es
 curl -L https://raw.github.com/normalocity/glint-nes/master/bin/glint-es > /root/glint-es/glint-es
+chmod +x /root/glint-es/glint-es
 
 mkdir -p /root/.glint-es
 mkdir -p /root/roms/

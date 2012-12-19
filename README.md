@@ -32,7 +32,7 @@ I wanted to publicly recognize a few people who have contributed to the project 
 
 **These paths are mutually exclusive** (i.e. pick only one, don't try to do both - they will conflict)
 
-* **Either** [Download a pre-built OS image](http://karmanebula.com/glint-downloads/), flash your SD card, and boot up your Pi. This is the least complicated approach and should give you a known working experience
+* **Either** [download a pre-built OS image](http://karmanebula.com/glint-downloads/), flash your SD card, and boot up your Pi. This is the least complicated approach and should give you a known working experience
 * **OR** Follow the prerequisites and build instructions below
 
 ## Prerequisites

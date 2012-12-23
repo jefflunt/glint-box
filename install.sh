@@ -9,8 +9,8 @@ then
 fi
 
 # Pull down component scripts
-curl -L https://raw.github.com/normalocity/glint-nes/$GLINTNESBRANCH/config/scripts/clean-pi.sh > $PIHOME/clean-pi.sh
-curl -L https://raw.github.com/normalocity/glint-nes/$GLINTNESBRANCH/config/scripts/glint-nes.sh > $PIHOME/glint-nes.sh
+curl -L https://raw.github.com/normalocity/glint-nes/$GLINTNESBRANCH/scripts/clean-pi.sh > $PIHOME/clean-pi.sh
+curl -L https://raw.github.com/normalocity/glint-nes/$GLINTNESBRANCH/scripts/glint-nes.sh > $PIHOME/glint-nes.sh
 
 # Run scripts
 cd $PIHOME

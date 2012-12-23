@@ -13,8 +13,9 @@ curl -L https://raw.github.com/normalocity/glint-nes/$GLINTNESBRANCH/config/scri
 curl -L https://raw.github.com/normalocity/glint-nes/$GLINTNESBRANCH/config/scripts/glint-nes.sh > $PIHOME/glint-nes.sh
 
 # Run scripts
-. clean-pi.sh
-. glint-nes.sh
+cd $PIHOME
+bash clean-pi.sh
+bash glint-nes.sh
 
 # Remove scripts
 rm $PIHOME/clean-pi.sh
@@ -30,4 +31,4 @@ sudo apt-get -y clean
 
 # Finish
 echo "\n\nRebooting...\n"
-shutdown -r now
+sudo shutdown -r now

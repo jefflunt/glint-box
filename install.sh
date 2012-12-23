@@ -27,6 +27,7 @@ rm $PIHOME/.bash_history
 
 # Clean up packages
 sudo apt-get -y autoremove
+sudo apt-get -y autoclean
 sudo apt-get -y clean
 
 # Finish

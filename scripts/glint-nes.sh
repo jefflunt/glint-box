@@ -90,13 +90,8 @@ function setupAudioModules() {
   curl -L https://raw.github.com/normalocity/glint-nes/$GLINTNESBRANCH/config/modules > /etc/modules
 }
 
-function aptGetCleanup() {
-  apt-get -y autoremove
-  apt-get -y clean
-}
-
 #######################
-# Actual built script #
+# Actual build script #
 #######################
 
 echo "############################################"
@@ -117,4 +112,3 @@ setupGlintES
 setupCustomSplashScreen
 setupUSBMounting
 setupAudioModules
-aptGetCleanup

@@ -7,6 +7,9 @@ function removePythonGames() {
 }
 
 function removeUnnecessaryPackages() {
+  echo ""
+  echo "## Removing python games..."
+  
   # This is things like:
   # - X11 desktop
   # - python
@@ -19,44 +22,59 @@ function removeUnnecessaryPackages() {
 }
 
 function removeCodeSamples() {
+  echo ""
+  echo "## Removing code samples..."
+  
   sudo rm -rf /opt
 }
 
 function removeDeveloperPackages() {
+  echo ""
+  echo "## Removing developer packages..."
+  
   sudo apt-get -y remove `sudo dpkg --get-selections | grep "\-dev" | sed s/install//`
 }
 
 function replaceSshWithDropbear {
+  echo ""
+  echo "## Replacing SSH with dropbear..."
+  
   # See: https://matt.ucc.asn.au/dropbear/dropbear.html
   sudo apt-get -y remove `sudo dpkg --get-selections | grep -v "deinstall" | grep ssh | sed s/install//`
   sudo apt-get -y install dropbear
 }
 
 function deleteLogFiles() {
+  echo ""
+  echo "## Purging log files..."
+  
   sudo rm -rf `find /var/log/ . -type f`
 }
 
 function zeroOutSwapFile() {
-# a swapfile is not a swap partition, so no using swapon|off from here on, use  dphys-swapfile swap[on|off]  for that
-#disapble swapping and fill swap with zeros
-#$SWAPOFF -a
+  echo ""
+  echo "## Zero-out swap file..."
+    
+  # a swapfile is not a swap partition, so no using swapon|off from here on, use  dphys-swapfile swap[on|off]  for that
+  #disapble swapping and fill swap with zeros
+  #$SWAPOFF -a
   sudo dphys-swapfile swapoff
   sudo dd if=/dev/zero of=/var/swap bs=1M count=100
 }
 
-################
-# Script steps #
-################
+#################
+# Cleanup steps #
+#################
 
 echo "###############################"
 echo "Running disk-cleaning script..."
 echo "###############################"
+echo ""
 
 removePythonGames
 removeUnnecessaryPackages
 removeCodeSamples
 removeDeveloperPackages
 replaceSshWithDropbear
-aptGetCleanup
 deleteLogFiles
 zeroOutSwapFile

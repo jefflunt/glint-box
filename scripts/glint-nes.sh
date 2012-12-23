@@ -82,9 +82,8 @@ function setupGlintES() {
   curl -L https://raw.github.com/normalocity/glint-nes/$GLINTNESBRANCH/media/glint-nes-fsbox-bg.png > $PIHOME/.glint-es/glint-nes-fsbox-bg.png
 }
 
-function setupCustomSplashScreen() {
-  # Currently disabled
-  
+# Currently disabled
+#function setupCustomSplashScreen() {
   # Custom splash screen stuff - disabled for now because it's unstable
   # From: http://raspberrypi.stackexchange.com/questions/1214/how-to-add-custom-loading-screen
   # apt-get -y install fbi
@@ -96,11 +95,10 @@ function setupCustomSplashScreen() {
   # 
   # chmod a+x /etc/init.d/aaasplash
   # insserv /etc/init.d/aaasplash
-}
+#}
 
-function setupUSBMounting() {
-  # Currently disabled
-  
+# Currently disabled
+#function setupUSBMounting() {
   # USB drive support for easy ROM loading
   # apt-get -y install udev autofs
   # mkdir -p /mnt/usbdisk
@@ -110,7 +108,7 @@ function setupUSBMounting() {
   # 
   # /etc/init.d/udev restart
   # /etc/init.d/autofs restart
-}
+#}
 
 function setupAudioModules() {
   curl -L https://raw.github.com/normalocity/glint-nes/$GLINTNESBRANCH/config/modules > /etc/modules

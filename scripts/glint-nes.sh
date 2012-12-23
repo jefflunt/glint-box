@@ -77,7 +77,8 @@ function setupGlintES() {
   curl -L https://raw.github.com/normalocity/glint-nes/$GLINTNESBRANCH/config/es_systems.cfg > $PIHOME/.glint-es/es_systems.cfg
   curl -L https://raw.github.com/normalocity/glint-nes/$GLINTNESBRANCH/config/es_theme.xml > $PIHOME/.glint-es/es_theme.xml
 
-  sudo curl -L https://raw.github.com/normalocity/glint-nes/$GLINTNESBRANCH/media/glint-font.ttf > /usr/share/fonts/glint-font.ttf
+  curl -L https://raw.github.com/normalocity/glint-nes/$GLINTNESBRANCH/media/glint-font.ttf > $PIHOME/glint-font.ttf
+  sudo mv $PIHOME/glint-font.ttf /usr/share/fonts/glint-font.ttf
   curl -L https://raw.github.com/normalocity/glint-nes/$GLINTNESBRANCH/media/glint-nes-bg.png > $PIHOME/.glint-es/glint-nes-bg.png
   curl -L https://raw.github.com/normalocity/glint-nes/$GLINTNESBRANCH/media/glint-nes-fsbox-bg.png > $PIHOME/.glint-es/glint-nes-fsbox-bg.png
 }
@@ -111,7 +112,8 @@ function setupGlintES() {
 #}
 
 function setupAudioModules() {
-  curl -L https://raw.github.com/normalocity/glint-nes/$GLINTNESBRANCH/config/modules > /etc/modules
+  curl -L https://raw.github.com/normalocity/glint-nes/$GLINTNESBRANCH/config/modules > $PIHOME/modules
+  sudo mv $PIHOME/modules /etc/modules
 }
 
 #######################
@@ -134,6 +136,6 @@ copyUserAndRPiConfigFiles
 makeGlintLogFolder
 setupAutoLogin
 setupGlintES
-setupCustomSplashScreen
-setupUSBMounting
+#setupCustomSplashScreen
+#setupUSBMounting
 setupAudioModules

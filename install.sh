@@ -1,11 +1,10 @@
 export PIHOME="/home/pi"
 
 # Set the glint-nes branch to pull from on github if it isn't already set
-  if [ -z "$GLINTNESBRANCH" ]
-  then
-    export GLINTNESBRANCH=master
-  fi
-}
+if [ -z "$GLINTNESBRANCH" ]
+then
+  export GLINTNESBRANCH=master
+fi
 
 # Pull down component scripts
 curl -L https://raw.github.com/normalocity/glint-nes/$GLINTNESBRANCH/config/scripts/clean-pi.sh > $PIHOME/clean-pi.sh

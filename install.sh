@@ -30,6 +30,9 @@ sudo apt-get -y autoremove
 sudo apt-get -y autoclean
 sudo apt-get -y clean
 
-# Finish
+# Purge log files
+sudo rm -rf `find /var/log/ . -type f`
+
+# Reboot
 echo "\n\nRebooting...\n"
 sudo shutdown -r now

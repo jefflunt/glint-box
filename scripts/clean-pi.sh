@@ -44,13 +44,6 @@ function replaceSshWithDropbear {
   sudo apt-get -y install dropbear
 }
 
-function deleteLogFiles() {
-  echo ""
-  echo "## Purging log files..."
-  
-  sudo rm -rf `find /var/log/ . -type f`
-}
-
 function zeroOutSwapFile() {
   echo ""
   echo "## Zero-out swap file..."
@@ -69,12 +62,10 @@ function zeroOutSwapFile() {
 echo "###############################"
 echo "Running disk-cleaning script..."
 echo "###############################"
-echo ""
 
 removePythonGames
 removeUnnecessaryPackages
 removeCodeSamples
 removeDeveloperPackages
 replaceSshWithDropbear
-deleteLogFiles
 zeroOutSwapFile

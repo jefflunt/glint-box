@@ -3,44 +3,71 @@
 PIHOME="/home/pi"
 RETROARCH_CONFIG="$PIHOME/retroarch/.config"
 
+function installCurl() {
+  echo ""
+  echo "## (re-)Installing curl..."
+  
+  # This must be reinstalled, because it's removed by the clean-pi.sh script
+  sudo apt-get -y install curl
+}
+
 function addCertificatesForRetroarchBinaries() {
-  apt-get -y install ca-certificates libxv1
-  echo "deb http://archive.changeover.za.net/raspbian wheezy main" | tee /etc/apt/sources.list.d/changeover.list
-  apt-key adv --keyserver keyserver.ubuntu.com --recv-key 2747C7CF
+  echo ""
+  echo "## Adding certificates and apt sources for retroarch..."
+  
+  sudo apt-get -y install ca-certificates libxv1
+  echo "deb http://archive.changeover.za.net/raspbian wheezy main" > changeover.list
+  sudo mv changeover.list /etc/apt/sources.list.d/
+  sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-key 2747C7CF
 }
 
 function aptGetUpdateAndUpgrade() {
+  echo ""
+  echo "## Updating apt..."
+  
   # DON'T call this function BEFORE the addition of the apt-key for retroarch binary, otherwise it will break
-  apt-get -y update
-  apt-get -y upgrade
+  sudo apt-get -y update
+  sudo apt-get -y upgrade
 }
 
 function installFceuAndRetroarch() {
-  apt-get -y install libretro-fceu retroarch
+  echo ""
+  echo "## Installing retroarch and fceu..."
+  
+  sudo apt-get -y install libretro-fceu retroarch
   
   mkdir -p $RETROARCH_CONFIG
   curl -L https://raw.github.com/normalocity/glint-nes/$GLINTNESBRANCH/config/retroarch.cfg > $RETROARCH_CONFIG/retroarch.cfg  
 }
 
 function copyUserAndRPiConfigFiles() {
+  echo ""
+  echo "## Copying user and RPi config files..."
+  
   curl -L https://raw.github.com/normalocity/glint-nes/$GLINTNESBRANCH/config/.profile > ~/.profile
   curl -L https://raw.github.com/normalocity/glint-nes/$GLINTNESBRANCH/config/raspberry-pi-config.txt > /tmp/config.txt
-  mv /boot/config.txt /boot/config.txt.backup
-  mv /tmp/config.txt /boot/config.txt
+  sudo mv /boot/config.txt /boot/config.txt.backup
+  sudo mv /tmp/config.txt /boot/config.txt
 }
 
 function makeGlintLogFolder() {
-  mkdir -p /var/log/glint
+  echo ""
+  echo "## Creating log folder for glint project..."
+  
+  sudo mkdir -p /var/log/glint
 }
 
 function setupAutoLogin() {
+  echo ""
+  echo "## Setting up auto-login..."
+  
   curl -L https://raw.github.com/normalocity/glint-nes/$GLINTNESBRANCH/scripts/inittab > /tmp/inittab
-  mv /etc/inittab /etc/inittab.backup
-  mv /tmp/inittab /etc/inittab
+  sudo mv /etc/inittab /etc/inittab.backup
+  sudo mv /tmp/inittab /etc/inittab
 }
 
 function setupGlintES() {
-  apt-get -y install build-essential libsdl1.2-dev libboost-filesystem-dev libfreeimage-dev libfreetype6-dev
+  sudo apt-get -y install build-essential libsdl1.2-dev libboost-filesystem-dev libfreeimage-dev libfreetype6-dev
   mkdir -p $PIHOME/glint-es
   curl -L https://raw.github.com/normalocity/glint-nes/$GLINTNESBRANCH/bin/glint-es > $PIHOME/glint-es/glint-es
   chmod +x $PIHOME/glint-es/glint-es
@@ -48,10 +75,9 @@ function setupGlintES() {
   mkdir -p $PIHOME/.glint-es
   mkdir -p $PIHOME/roms/
   curl -L https://raw.github.com/normalocity/glint-nes/$GLINTNESBRANCH/config/es_systems.cfg > $PIHOME/.glint-es/es_systems.cfg
-  curl -L https://raw.github.com/normalocity/glint-nes/$GLINTNESBRANCH/config/es_input.cfg > $PIHOME/.glint-es/es_input.cfg
   curl -L https://raw.github.com/normalocity/glint-nes/$GLINTNESBRANCH/config/es_theme.xml > $PIHOME/.glint-es/es_theme.xml
 
-  curl -L https://raw.github.com/normalocity/glint-nes/$GLINTNESBRANCH/media/glint-font.ttf > /usr/share/fonts/truetype/glint-font.ttf
+  sudo curl -L https://raw.github.com/normalocity/glint-nes/$GLINTNESBRANCH/media/glint-font.ttf > /usr/share/fonts/glint-font.ttf
   curl -L https://raw.github.com/normalocity/glint-nes/$GLINTNESBRANCH/media/glint-nes-bg.png > $PIHOME/.glint-es/glint-nes-bg.png
   curl -L https://raw.github.com/normalocity/glint-nes/$GLINTNESBRANCH/media/glint-nes-fsbox-bg.png > $PIHOME/.glint-es/glint-nes-fsbox-bg.png
 }
@@ -99,6 +125,7 @@ echo "Running glint-nes/glint-es install script..."
 echo "############################################"
 
 # Emulation core
+installCurl
 addCertificatesForRetroarchBinaries
 aptGetUpdateAndUpgrade
 installFceuAndRetroarch

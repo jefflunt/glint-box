@@ -22,7 +22,7 @@ function installFceuAndRetroarch() {
   curl -L https://raw.github.com/normalocity/glint-nes/$GLINTNESBRANCH/config/retroarch.cfg > $RETROARCH_CONFIG/retroarch.cfg  
 }
 
-function copyConfigFiles() {
+function copyUserAndRPiConfigFiles() {
   curl -L https://raw.github.com/normalocity/glint-nes/$GLINTNESBRANCH/config/.profile > ~/.profile
   curl -L https://raw.github.com/normalocity/glint-nes/$GLINTNESBRANCH/config/raspberry-pi-config.txt > /tmp/config.txt
   mv /boot/config.txt /boot/config.txt.backup
@@ -104,7 +104,7 @@ addCertificatesForRetroarchBinaries
 aptGetUpdateAndUpgrade
 installFceuAndRetroarch
 
-copyConfigFiles
+copyUserAndRPiConfigFiles
 
 # glint-nes/glint-es setup
 makeGlintLogFolder

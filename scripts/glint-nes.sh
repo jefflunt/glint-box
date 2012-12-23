@@ -55,6 +55,7 @@ function makeGlintLogFolder() {
   echo "## Creating log folder for glint project..."
   
   sudo mkdir -p /var/log/glint
+  sudo chown pi:pi /var/log/glint
 }
 
 function setupAutoLogin() {
@@ -116,6 +117,11 @@ function setupAudioModules() {
   sudo mv $PIHOME/modules /etc/modules
 }
 
+function reinstallMediaLibraries() {
+  sudo apt-get -y remove libraspberrypi0
+  sudo apt-get -y install libraspberrypi0
+}
+
 #######################
 # Actual build script #
 #######################
@@ -139,3 +145,4 @@ setupGlintES
 #setupCustomSplashScreen
 #setupUSBMounting
 setupAudioModules
+reinstallMediaLibraries

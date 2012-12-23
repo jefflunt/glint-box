@@ -41,19 +41,19 @@ function setupAutoLogin() {
 
 function setupGlintES() {
   apt-get -y install build-essential libsdl1.2-dev libboost-filesystem-dev libfreeimage-dev libfreetype6-dev
-  mkdir -p /root/glint-es
-  curl -L https://raw.github.com/normalocity/glint-nes/$GLINTNESBRANCH/bin/glint-es > /root/glint-es/glint-es
-  chmod +x /root/glint-es/glint-es
+  mkdir -p $PIHOME/glint-es
+  curl -L https://raw.github.com/normalocity/glint-nes/$GLINTNESBRANCH/bin/glint-es > $PIHOME/glint-es/glint-es
+  chmod +x $PIHOME/glint-es/glint-es
 
-  mkdir -p /root/.glint-es
-  mkdir -p /root/roms/
-  curl -L https://raw.github.com/normalocity/glint-nes/$GLINTNESBRANCH/config/es_systems.cfg > /root/.glint-es/es_systems.cfg
-  curl -L https://raw.github.com/normalocity/glint-nes/$GLINTNESBRANCH/config/es_input.cfg > /root/.glint-es/es_input.cfg
-  curl -L https://raw.github.com/normalocity/glint-nes/$GLINTNESBRANCH/config/es_theme.xml > /root/.glint-es/es_theme.xml
+  mkdir -p $PIHOME/.glint-es
+  mkdir -p $PIHOME/roms/
+  curl -L https://raw.github.com/normalocity/glint-nes/$GLINTNESBRANCH/config/es_systems.cfg > $PIHOME/.glint-es/es_systems.cfg
+  curl -L https://raw.github.com/normalocity/glint-nes/$GLINTNESBRANCH/config/es_input.cfg > $PIHOME/.glint-es/es_input.cfg
+  curl -L https://raw.github.com/normalocity/glint-nes/$GLINTNESBRANCH/config/es_theme.xml > $PIHOME/.glint-es/es_theme.xml
 
   curl -L https://raw.github.com/normalocity/glint-nes/$GLINTNESBRANCH/media/glint-font.ttf > /usr/share/fonts/truetype/glint-font.ttf
-  curl -L https://raw.github.com/normalocity/glint-nes/$GLINTNESBRANCH/media/glint-nes-bg.png > /root/.glint-es/glint-nes-bg.png
-  curl -L https://raw.github.com/normalocity/glint-nes/$GLINTNESBRANCH/media/glint-nes-fsbox-bg.png > /root/.glint-es/glint-nes-fsbox-bg.png
+  curl -L https://raw.github.com/normalocity/glint-nes/$GLINTNESBRANCH/media/glint-nes-bg.png > $PIHOME/.glint-es/glint-nes-bg.png
+  curl -L https://raw.github.com/normalocity/glint-nes/$GLINTNESBRANCH/media/glint-nes-fsbox-bg.png > $PIHOME/.glint-es/glint-nes-fsbox-bg.png
 }
 
 function setupCustomSplashScreen() {

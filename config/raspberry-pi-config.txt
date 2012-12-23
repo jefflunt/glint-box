@@ -1,1 +1,5 @@
+framebuffer_width-640
+framebuffer_height=480
+
+gpu_mem=64
 arm_freq=800

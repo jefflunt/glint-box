@@ -51,7 +51,7 @@ This command runs a script from the project that downloads and installs everythi
 
 ## Play! (BYOR - Bring Your Own ROMs)
 
-Place any ROMs you have under the `/root/roms` folder and reboot the RPi. This time it should boot straight into the graphical frontend
+Place any ROMs you have under the `/home/pi/roms` folder and reboot the RPi. This time it should boot straight into the graphical frontend
 
 Please [report issues](https://groups.google.com/forum/?hl=en&fromgroups=#!forum/glint-help) that you run into. :)
 

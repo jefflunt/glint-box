@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 
-# Check that some commands need to be run with sudo/root privileges
-
 function removePythonGames() {
   if [ -d "$PIHOME/python_games" ]; then
      rm -f "$PIHOME/python_games"

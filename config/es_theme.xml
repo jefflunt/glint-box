@@ -4,7 +4,7 @@
   <listSecondaryColor>BBBBBB</listSecondaryColor>
 
   <fastSelectColor>FFFFFF</fastSelectColor>
-  <boxBackground>/root/.glint-es/glint-nes-fsbox-bg.png</boxBackground>
+  <boxBackground>/home/pi/.glint-es/glint-nes-fsbox-bg.png</boxBackground>
   <boxBackgroundTiled />
   <listLeftAlign />
   <listOffsetX>0.1</listOffsetX>
@@ -15,7 +15,7 @@
 
   <component>
     <type>image</type>
-    <path>/root/.glint-es/glint-nes-bg.png</path>
+    <path>/home/pi/.glint-es/glint-nes-bg.png</path>
     <pos>0 0</pos>
     <dim>1 1</dim>
     <origin>0 0</origin>

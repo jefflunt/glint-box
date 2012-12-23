@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
 function removePythonGames() {
   if [ -d "$PIHOME/python_games" ]; then

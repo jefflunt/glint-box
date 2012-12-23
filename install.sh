@@ -1,3 +1,5 @@
+#!/bin/bash
+
 export PIHOME="/home/pi"
 
 # Set the glint-nes branch to pull from on github if it isn't already set

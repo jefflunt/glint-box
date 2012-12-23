@@ -2,7 +2,7 @@
 
 function removePythonGames() {
   if [ -d "$PIHOME/python_games" ]; then
-     rm -f "$PIHOME/python_games"
+     rm -rf "$PIHOME/python_games"
   fi  
 }
 
@@ -48,7 +48,9 @@ function zeroOutSwapFile() {
 # Script steps #
 ################
 
-echo "\n\n####################\nRunning disk-cleaning script...\n\n"
+echo "###############################"
+echo "Running disk-cleaning script..."
+echo "###############################"
 
 removePythonGames
 removeUnnecessaryPackages

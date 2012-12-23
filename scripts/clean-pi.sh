@@ -32,11 +32,6 @@ function replaceSshWithDropbear {
   sudo apt-get -y install dropbear
 }
 
-function aptGetCleanup() {
-  sudo apt-get -y autoremove
-  sudo apt-get -y clean
-}
-
 function deleteLogFiles() {
   sudo rm -rf `find /var/log/ . -type f`
 }

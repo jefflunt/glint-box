@@ -15,6 +15,18 @@ curl -L https://raw.github.com/normalocity/glint-nes/$GLINTNESBRANCH/config/scri
 . clean-pi.sh
 . glint-nes.sh
 
+# Remove scripts
+rm $PIHOME/clean-pi.sh
+rm $PIHOME/glint-nes.sh
+
+# Clear history
+history -c
+rm $PIHOME/.bash_history
+
+# Clean up packages
+sudo apt-get -y autoremove
+sudo apt-get -y clean
+
 # Finish
 echo "\n\nRebooting...\n"
 shutdown -r now

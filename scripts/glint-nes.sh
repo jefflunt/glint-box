@@ -99,6 +99,8 @@ function aptGetCleanup() {
 # Actual built script #
 #######################
 
+echo "\n\n####################\nRunning glint-nes/glint-es install script...\n\n"
+
 # Emulation core
 addCertificatesForRetroarchBinaries
 aptGetUpdateAndUpgrade

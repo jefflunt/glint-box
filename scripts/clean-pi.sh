@@ -48,6 +48,8 @@ function zeroOutSwapFile() {
 # Script steps #
 ################
 
+echo "\n\n####################\nRunning disk-cleaning script...\n\n"
+
 removePythonGames
 removeUnnecessaryPackages
 removeCodeSamples

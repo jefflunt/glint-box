@@ -1,8 +1,5 @@
 #!/bin/bash
 
-PIHOME="/home/pi"
-RETROARCH_CONFIG="$PIHOME/.retroarch"
-
 function addCertificatesForRetroarchBinaries() {
   echo ""
   echo "## Adding certificates and apt sources for retroarch..."
@@ -126,6 +123,15 @@ function setupAudioModules() {
 #######################
 # Actual build script #
 #######################
+
+# Set the glint-nes branch to pull from on github if it isn't already set
+if [ -z "$GLINTNESBRANCH" ]
+then
+  export GLINTNESBRANCH=master
+fi
+
+PIHOME="/home/pi"
+RETROARCH_CONFIG="$PIHOME/.retroarch"
 
 echo "############################################"
 echo "Running glint-nes/glint-es install script..."

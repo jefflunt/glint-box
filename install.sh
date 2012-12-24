@@ -2,6 +2,10 @@
 
 export PIHOME="/home/pi"
 
+# Force Google DNS for install
+echo "nameserver 8.8.8.8" | sudo tee /etc/resolv.conf
+echo "nameserver 8.8.4.4" | sudo tee -a /etc/resolv.conf
+
 # Set the glint-nes branch to pull from on github if it isn't already set
 if [ -z "$GLINTNESBRANCH" ]
 then

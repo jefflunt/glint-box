@@ -28,15 +28,6 @@ function removeDeveloperPackages() {
   sudo apt-get -y remove `sudo dpkg --get-selections | grep "\-dev" | sed s/install//`
 }
 
-function replaceSshWithDropbear {
-  echo ""
-  echo "## Replacing SSH with dropbear..."
-  
-  # See: https://matt.ucc.asn.au/dropbear/dropbear.html
-  sudo apt-get -y remove `sudo dpkg --get-selections | grep -v "deinstall" | grep ssh | sed s/install//`
-  sudo apt-get -y install dropbear
-}
-
 function zeroOutSwapFile() {
   echo ""
   echo "## Zero-out swap file..."
@@ -59,5 +50,4 @@ echo "###############################"
 removePythonGames
 removeUnnecessaryPackages
 removeDeveloperPackages
-replaceSshWithDropbear
 zeroOutSwapFile

@@ -6,6 +6,7 @@ RETROARCH_CONFIG="$PIHOME/.retroarch"
 function addCertificatesForRetroarchBinaries() {
   echo ""
   echo "## Adding certificates and apt sources for retroarch..."
+  echo ""
   
   sudo apt-get -y install ca-certificates libxv1
   echo "deb http://archive.changeover.za.net/raspbian wheezy main" > changeover.list
@@ -16,6 +17,7 @@ function addCertificatesForRetroarchBinaries() {
 function aptGetUpdateAndUpgrade() {
   echo ""
   echo "## Updating apt..."
+  echo ""
   
   # DON'T call this function BEFORE the addition of the apt-key for retroarch binary, otherwise it will break
   sudo apt-get -y update
@@ -25,6 +27,7 @@ function aptGetUpdateAndUpgrade() {
 function installFceuAndRetroarch() {
   echo ""
   echo "## Installing retroarch and fceu..."
+  echo ""
   
   sudo apt-get -y install libretro-fceu retroarch
   
@@ -35,6 +38,7 @@ function installFceuAndRetroarch() {
 function copyUserAndRPiConfigFiles() {
   echo ""
   echo "## Copying user and RPi config files..."
+  echo ""
   
   curl -L https://raw.github.com/normalocity/glint-nes/$GLINTNESBRANCH/config/.profile > ~/.profile
   curl -L https://raw.github.com/normalocity/glint-nes/$GLINTNESBRANCH/config/raspberry-pi-config.txt > /tmp/config.txt
@@ -45,6 +49,7 @@ function copyUserAndRPiConfigFiles() {
 function makeGlintLogFolder() {
   echo ""
   echo "## Creating log folder for glint project..."
+  echo ""
   
   sudo mkdir -p /var/log/glint
   sudo chown pi:pi /var/log/glint
@@ -53,6 +58,7 @@ function makeGlintLogFolder() {
 function setupAutoLogin() {
   echo ""
   echo "## Setting up auto-login..."
+  echo ""
   
   curl -L https://raw.github.com/normalocity/glint-nes/$GLINTNESBRANCH/scripts/inittab > /tmp/inittab
   sudo mv /etc/inittab /etc/inittab.backup
@@ -62,6 +68,7 @@ function setupAutoLogin() {
 function setupGlintES() {
   echo ""
   echo "## Installing glint-es frontend..."
+  echo ""
   
   sudo apt-get -y install build-essential libsdl1.2-dev libboost-filesystem-dev libfreeimage-dev libfreetype6-dev
   mkdir -p $PIHOME/glint-es
@@ -110,6 +117,7 @@ function setupGlintES() {
 function setupAudioModules() {
   echo ""
   echo "## Ensuring audio is setup..."
+  echo ""
   
   curl -L https://raw.github.com/normalocity/glint-nes/$GLINTNESBRANCH/config/modules > $PIHOME/modules
   sudo mv $PIHOME/modules /etc/modules

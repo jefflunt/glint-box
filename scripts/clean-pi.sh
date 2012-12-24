@@ -21,13 +21,6 @@ function removeUnnecessaryPackages() {
   sudo apt-get -y remove x11-common midori lxde python3 python3-minimal lxde-common lxde-icon-theme omxplayer gcc-4.4-base:armhf gcc-4.5-base:armhf gcc-4.6-base:armhf libraspberrypi-doc xkb-data fonts-freefont-ttf locales manpages
 }
 
-function removeCodeSamples() {
-  echo ""
-  echo "## Removing code samples..."
-  
-  sudo rm -rf /opt
-}
-
 function removeDeveloperPackages() {
   echo ""
   echo "## Removing developer packages..."
@@ -65,7 +58,6 @@ echo "###############################"
 
 removePythonGames
 removeUnnecessaryPackages
-removeCodeSamples
 removeDeveloperPackages
 replaceSshWithDropbear
 zeroOutSwapFile

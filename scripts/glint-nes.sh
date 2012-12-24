@@ -1,7 +1,7 @@
 #!/bin/bash
 
 PIHOME="/home/pi"
-RETROARCH_CONFIG="$PIHOME/retroarch/.config"
+RETROARCH_CONFIG="$PIHOME/.retroarch"
 
 function installCurl() {
   echo ""

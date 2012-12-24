@@ -79,7 +79,9 @@ function setupGlintES() {
   curl -L https://raw.github.com/normalocity/glint-nes/$GLINTNESBRANCH/config/es_theme.xml > $PIHOME/.glint-es/es_theme.xml
 
   curl -L https://raw.github.com/normalocity/glint-nes/$GLINTNESBRANCH/media/glint-font.ttf > $PIHOME/glint-font.ttf
-  sudo mv $PIHOME/glint-font.ttf /usr/share/fonts/glint-font.ttf
+  sudo mkdir -p /usr/share/fonts/truetype
+  sudo mv $PIHOME/glint-font.ttf /usr/share/fonts/truetype/glint-font.ttf
+  sudo chown pi:pi /usr/share/fonts/truetype/glint-font.ttf
   curl -L https://raw.github.com/normalocity/glint-nes/$GLINTNESBRANCH/media/glint-nes-bg.png > $PIHOME/.glint-es/glint-nes-bg.png
   curl -L https://raw.github.com/normalocity/glint-nes/$GLINTNESBRANCH/media/glint-nes-fsbox-bg.png > $PIHOME/.glint-es/glint-nes-fsbox-bg.png
 }

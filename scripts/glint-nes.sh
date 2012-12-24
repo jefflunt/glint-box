@@ -3,14 +3,6 @@
 PIHOME="/home/pi"
 RETROARCH_CONFIG="$PIHOME/.retroarch"
 
-function installCurl() {
-  echo ""
-  echo "## (re-)Installing curl..."
-  
-  # This must be reinstalled, because it's removed by the clean-pi.sh script
-  sudo apt-get -y install curl
-}
-
 function addCertificatesForRetroarchBinaries() {
   echo ""
   echo "## Adding certificates and apt sources for retroarch..."
@@ -140,7 +132,6 @@ echo "Running glint-nes/glint-es install script..."
 echo "############################################"
 
 # Emulation core
-installCurl
 addCertificatesForRetroarchBinaries
 aptGetUpdateAndUpgrade
 installFceuAndRetroarch

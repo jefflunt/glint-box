@@ -119,6 +119,11 @@ function setupAudioModules() {
   sudo mv $PIHOME/modules /etc/modules
 }
 
+function forceGoogleDNS() {
+  echo "nameserver 8.8.8.8" | sudo tee /etc/resolv.conf
+  echo "nameserver 8.8.4.4" | sudo tee -a /etc/resolv.conf
+}
+
 #######################
 # Actual build script #
 #######################
@@ -142,3 +147,4 @@ setupGlintES
 #setupCustomSplashScreen
 #setupUSBMounting
 setupAudioModules
+forceGoogleDNS

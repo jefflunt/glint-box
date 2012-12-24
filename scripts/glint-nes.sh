@@ -119,11 +119,6 @@ function setupAudioModules() {
   sudo mv $PIHOME/modules /etc/modules
 }
 
-function reinstallMediaLibraries() {
-  sudo apt-get -y remove libraspberrypi0
-  sudo apt-get -y install libraspberrypi0
-}
-
 #######################
 # Actual build script #
 #######################
@@ -147,4 +142,3 @@ setupGlintES
 #setupCustomSplashScreen
 #setupUSBMounting
 setupAudioModules
-reinstallMediaLibraries

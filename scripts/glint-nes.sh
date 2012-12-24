@@ -68,6 +68,9 @@ function setupAutoLogin() {
 }
 
 function setupGlintES() {
+  echo ""
+  echo "## Installing glint-es frontend..."
+  
   sudo apt-get -y install build-essential libsdl1.2-dev libboost-filesystem-dev libfreeimage-dev libfreetype6-dev
   mkdir -p $PIHOME/glint-es
   curl -L https://raw.github.com/normalocity/glint-nes/$GLINTNESBRANCH/bin/glint-es > $PIHOME/glint-es/glint-es
@@ -113,11 +116,17 @@ function setupGlintES() {
 #}
 
 function setupAudioModules() {
+  echo ""
+  echo "## Ensuring audio is setup..."
+  
   curl -L https://raw.github.com/normalocity/glint-nes/$GLINTNESBRANCH/config/modules > $PIHOME/modules
   sudo mv $PIHOME/modules /etc/modules
 }
 
 function forceGoogleDNS() {
+  echo ""
+  echo "## Defaulting DNS to Google servers..."
+  
   echo "nameserver 8.8.8.8" | sudo tee /etc/resolv.conf
   echo "nameserver 8.8.4.4" | sudo tee -a /etc/resolv.conf
 }

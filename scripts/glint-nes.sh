@@ -1,5 +1,13 @@
 #!/bin/bash
 
+# Set the glint-nes branch to pull from on github if it isn't already set
+if [ -z "$GLINTNESBRANCH" ]
+then
+  export GLINTNESBRANCH=master
+fi
+
+RETROARCH_CONFIG="$HOME/.retroarch"
+
 function addCertificatesForRetroarchBinaries() {
   echo ""
   echo "## Adding certificates and apt sources for retroarch..."
@@ -68,19 +76,19 @@ function setupGlintES() {
   echo ""
   
   sudo apt-get -y install build-essential libsdl1.2-dev libboost-filesystem-dev libfreeimage-dev libfreetype6-dev
-  mkdir -p $PIHOME/glint-es
-  curl -L https://raw.github.com/normalocity/glint-nes/$GLINTNESBRANCH/bin/glint-es > $PIHOME/glint-es/glint-es
-  chmod +x $PIHOME/glint-es/glint-es
+  mkdir -p $HOME/glint-es
+  curl -L https://raw.github.com/normalocity/glint-nes/$GLINTNESBRANCH/bin/glint-es > $HOME/glint-es/glint-es
+  chmod +x $HOME/glint-es/glint-es
 
-  mkdir -p $PIHOME/.glint-es
-  mkdir -p $PIHOME/roms/
-  curl -L https://raw.github.com/normalocity/glint-nes/$GLINTNESBRANCH/config/es_systems.cfg > $PIHOME/.glint-es/es_systems.cfg
-  curl -L https://raw.github.com/normalocity/glint-nes/$GLINTNESBRANCH/config/es_theme.xml > $PIHOME/.glint-es/es_theme.xml
+  mkdir -p $HOME/.glint-es
+  mkdir -p $HOME/roms/
+  curl -L https://raw.github.com/normalocity/glint-nes/$GLINTNESBRANCH/config/es_systems.cfg > $HOME/.glint-es/es_systems.cfg
+  curl -L https://raw.github.com/normalocity/glint-nes/$GLINTNESBRANCH/config/es_theme.xml > $HOME/.glint-es/es_theme.xml
 
-  curl -L https://raw.github.com/normalocity/glint-nes/$GLINTNESBRANCH/media/glint-font.ttf > $PIHOME/glint-font.ttf
-  sudo mv $PIHOME/glint-font.ttf /usr/share/fonts/truetype/glint-font.ttf
-  curl -L https://raw.github.com/normalocity/glint-nes/$GLINTNESBRANCH/media/glint-nes-bg.png > $PIHOME/.glint-es/glint-nes-bg.png
-  curl -L https://raw.github.com/normalocity/glint-nes/$GLINTNESBRANCH/media/glint-nes-fsbox-bg.png > $PIHOME/.glint-es/glint-nes-fsbox-bg.png
+  curl -L https://raw.github.com/normalocity/glint-nes/$GLINTNESBRANCH/media/glint-font.ttf > $HOME/glint-font.ttf
+  sudo mv $HOME/glint-font.ttf /usr/share/fonts/truetype/glint-font.ttf
+  curl -L https://raw.github.com/normalocity/glint-nes/$GLINTNESBRANCH/media/glint-nes-bg.png > $HOME/.glint-es/glint-nes-bg.png
+  curl -L https://raw.github.com/normalocity/glint-nes/$GLINTNESBRANCH/media/glint-nes-fsbox-bg.png > $HOME/.glint-es/glint-nes-fsbox-bg.png
 }
 
 # Currently disabled
@@ -116,22 +124,13 @@ function setupAudioModules() {
   echo "## Ensuring audio is setup..."
   echo ""
   
-  curl -L https://raw.github.com/normalocity/glint-nes/$GLINTNESBRANCH/config/modules > $PIHOME/modules
-  sudo mv $PIHOME/modules /etc/modules
+  curl -L https://raw.github.com/normalocity/glint-nes/$GLINTNESBRANCH/config/modules > $HOME/modules
+  sudo mv $HOME/modules /etc/modules
 }
 
 #######################
 # Actual build script #
 #######################
-
-# Set the glint-nes branch to pull from on github if it isn't already set
-if [ -z "$GLINTNESBRANCH" ]
-then
-  export GLINTNESBRANCH=master
-fi
-
-PIHOME="/home/pi"
-RETROARCH_CONFIG="$PIHOME/.retroarch"
 
 echo "############################################"
 echo "Running glint-nes/glint-es install script..."

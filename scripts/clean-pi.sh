@@ -5,8 +5,8 @@ function removePythonGames() {
   echo "## Removing python games..."
   echo ""
   
-  if [ -d "$PIHOME/python_games" ]; then
-     rm -rf "$PIHOME/python_games"
+  if [ -d "$HOME/python_games" ]; then
+     rm -rf "$HOME/python_games"
   fi  
 }
 

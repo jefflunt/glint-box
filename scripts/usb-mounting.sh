@@ -7,7 +7,7 @@ sudo apt-get -y install autofs udev
 sudo mkdir -p /mnt/usbdisk
 
 #create a new udev rules file and add line
-sudo echo -n 'ACTION=="add", SUBSYSTEM=="block", KERNEL=="sd?[1-9]", SYMLINK+="usbdisk%n", RUN+="/usr/local/bin/copyroms.sh"' > /etc/udev/rules.d/80-usbdisk.rules
+sudo echo -n 'ACTION=="add", SUBSYSTEM=="block", KERNEL=="sd?[1-9]", SYMLINK+="usbdisk%n", RUN+="/usr/local/bin/copy-roms.sh"' > /etc/udev/rules.d/80-usbdisk.rules
 
 #restart udev
 sudo /etc/init.d/udev restart

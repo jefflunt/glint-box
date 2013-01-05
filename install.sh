@@ -13,11 +13,13 @@ fi
 # Pull down component scripts
 curl -L https://raw.github.com/normalocity/glint-nes/$GLINTNESBRANCH/scripts/clean-pi.sh > $HOME/clean-pi.sh
 curl -L https://raw.github.com/normalocity/glint-nes/$GLINTNESBRANCH/scripts/glint-nes.sh > $HOME/glint-nes.sh
+curl -L https://raw.github.com/normalocity/glint-nes/$GLINTNESBRANCH/scripts/usb-mounting.sh > $HOME/usb-mounting.sh
 
 # Run scripts
 cd $HOME
 bash clean-pi.sh
 bash glint-nes.sh
+bash usb-mounting.sh
 
 # Remove scripts
 rm $HOME/clean-pi.sh
@@ -36,5 +38,5 @@ sudo apt-get -y clean
 sudo rm -rf `find /var/log/ . -type f`
 
 # Reboot
-echo "\n\nRebooting...\n"
-sudo shutdown -r now
+echo "==============================================================\n"
+echo "\n\nglint-nes install scripts done. You should probably reboot now.\n"

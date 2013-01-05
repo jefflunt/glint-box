@@ -15,6 +15,9 @@ curl -L https://raw.github.com/normalocity/glint-nes/$GLINTNESBRANCH/scripts/cle
 curl -L https://raw.github.com/normalocity/glint-nes/$GLINTNESBRANCH/scripts/glint-nes.sh > $HOME/glint-nes.sh
 curl -L https://raw.github.com/normalocity/glint-nes/$GLINTNESBRANCH/scripts/usb-mounting.sh > $HOME/usb-mounting.sh
 
+curl -L https://raw.github.com/normalocity/glint-nes/$GLINTNESBRANCH/scripts/copy-roms.sh > $HOME/copy-roms.sh
+sudo mv $HOME/copy-roms.sh /usr/local/bin/copy-roms.sh
+
 # Run scripts
 cd $HOME
 bash clean-pi.sh
@@ -24,6 +27,7 @@ bash usb-mounting.sh
 # Remove scripts
 rm $HOME/clean-pi.sh
 rm $HOME/glint-nes.sh
+rm $HOME/usb-mounting.sh
 
 # Clear history
 history -c

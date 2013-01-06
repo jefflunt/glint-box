@@ -39,7 +39,7 @@ I wanted to publicly recognize a few people who have contributed to the project 
 
 1. Raspberry Pi Rev B. board (the one with the ethernet jack). Either the 256MB or 512MB models work just fine.
 2. Power supply for your Pi. It should be at least **5.0 volts, 1 amp (or 1000 milliamps)**. I use the outlet-to-USB adapter I got with the iPad - it's 3 amps - more than enough. I believe the power supply for the Google Nexus 7 tablet is also sufficiently powerful. Your typical cell phone wall outlet power supply might also be sufficient, but double check the power output printed on the power supply itself.
-4. 4GB SD card (minimum size) imaged with the [Raspbian Wheezy minimal image](https://s3-us-west-2.amazonaws.com/glint-images/raspbian_wheezy_20120608.img.7z).
+4. 4GB SD card (minimum size) imaged with the [Raspbian Wheezy 2012-12-16 image](http://downloads.raspberrypi.org/images/raspbian/2012-12-16-wheezy-raspbian/2012-12-16-wheezy-raspbian.zip).
 
 ## Build
 

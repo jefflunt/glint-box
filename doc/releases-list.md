@@ -2,8 +2,9 @@
 
 ## STABLE glint-nes downloads
 
-*There are no stable releases yet. Please download a BETA image, try it out, and report back any issues you have.*
-
+*There are no stable releases yet. Please download a BETA image, try it out, and <a href="mailto:jefflunt@gmail.com">report back</a> any issues you have.*<br />
+<br />
+Thank you so much for trying out glint!
 <hr />
 
 ## BETA glint-nes downloads
@@ -13,54 +14,64 @@
     <tr>
       <th>Build date</th>
       <th>Problems</th>
-      <th>Torrent</th>
-      <th>Dowload</th>
+      <th>Download</th>
+      <th>SHA1 checksum</th>
       <th>Built from</th>
       <th>Size</th>
     </tr>
   </thead>
+  
   <tbody>
     <tr>
+      <td>2013-01-06</td>
+      <td>Pending tests</td>
+      <td><a href="https://s3-us-west-2.amazonaws.com/glint-images/2013-01-06-glint-nes.img.zip">download</a></td>
+      <td><b>017c672f5f2c3b85ffbf6db4cfbc39ad97d378a3</b></td>
+      <td><a href="http://downloads.raspberrypi.org/images/raspbian/2012-12-16-wheezy-raspbian/2012-12-16-wheezy-raspbian.zip">Raspbian 2012-12-16</a></td>
+      <td>562 MB</td>
+    </tr>
+    
+    <tr>
       <td>2012-11-11</td>
-      <td><img src="/storage/design/red-exclamation-15px.png" /> <a href="#2012-11-11-problems">Breaking keyboard issues :(</a></td>
+      <td><img src="/storage/design/red-exclamation-15px.png" /> <a href="#2012-11-11-problems">Booting</a></td>
       <td>REMOVED</td>
-      <td>REMOVED</td>
+      <td>N/A</td>
       <td><a href="http://downloads.raspberrypi.org/images/raspbian/2012-10-28-wheezy-raspbian/2012-10-28-wheezy-raspbian.zip">Raspbian 2012-10-28</a></td>
       <td>565 MB</td>
     </tr>
 
     <tr>
       <td>2012-11-05</td>
-      <td><img src="/storage/design/yellow-exclamation-15px.png" /><a href="#2012-11-05-problems"> Limited audio issues. Most games working well.</a></td>
-      <td><a href="https://s3-us-west-2.amazonaws.com/glint-images/2012-11-05-glint-nes.torrent">torrent</a></td>
+      <td><img src="/storage/design/yellow-exclamation-15px.png" /><a href="#2012-11-05-problems">Audio</a></td>
       <td><a href="https://s3-us-west-2.amazonaws.com/glint-images/2012-11-05-glint-nes.img.zip">download</a></td>
+      <td>N/A</td>
       <td><a href="http://downloads.raspberrypi.org/images/raspbian/2012-10-28-wheezy-raspbian/2012-10-28-wheezy-raspbian.zip">Raspbian 2012-10-28</a></td>
       <td>535 MB</td>
     </tr>
 
     <tr>
       <td>2012-11-03</td>
-      <td><a href="#2012-11-03-problems"><img src="/storage/design/yellow-exclamation-15px.png" /> Sound glitches on many games</a></td>
-      <td><a href="https://s3-us-west-2.amazonaws.com/glint-images/2012-11-03-glint-nes.torrent">torrent</a></td>
+      <td><a href="#2012-11-03-problems"><img src="/storage/design/yellow-exclamation-15px.png" />Audio</a></td>
       <td><a href="https://s3-us-west-2.amazonaws.com/glint-images/2012-11-03-glint-nes.img.zip">download</a></td>
+      <td>N/A</td>
       <td><a href="http://downloads.raspberrypi.org/images/raspbian/2012-10-28-wheezy-raspbian/2012-10-28-wheezy-raspbian.zip">Raspbian 2012-10-28</a></td>
       <td>500 MB</td>
     </tr>
     
     <tr>
       <td>2012-11-02</td>
-      <td><a href="#2012-11-02-problems"><img src="/storage/design/red-exclamation-15px.png" /> Won't boot</a></td>
+      <td><a href="#2012-11-02-problems"><img src="/storage/design/red-exclamation-15px.png" />Booting</a></td>
       <td>REMOVED</td>
-      <td>REMOVED</td>
+      <td>N/A</td>
       <td>Raspbian 2012-09-18</td>
       <td>2 GB</td>
     </tr>
     
     <tr>
       <td>2012-11-01</td>
-      <td><a href="#2012-11-01-problems"><img src="/storage/design/red-exclamation-15px.png" /> Won't boot</a></td>
+      <td><a href="#2012-11-01-problems"><img src="/storage/design/red-exclamation-15px.png" />Booting</a></td>
       <td>REMOVED</td>
-      <td>REMOVED</td>
+      <td>N/A</td>
       <td>Raspbian 2012-09-18</td>
       <td>8 GB</td>
     </tr>
@@ -69,6 +80,19 @@
 
 <hr />
 
+### Notes for BETA 2013-01-06-glint-nes image
+<table id="2013-01-06-problems" class="release-problems">
+  <tbody>
+    <td></td>
+    <td>
+      <ul class="compact-list">
+        <li>Currently being tested. Please download, experiment, and report back.</li>        
+      </ul>
+    </td>
+  </tbody>
+</table>
+
+
 ### Notes for BETA 2012-11-11-glint-nes image
 <table id="2012-11-11-problems" class="release-problems">
   <tbody>
@@ -76,6 +100,7 @@
     <td>
       <ul class="compact-list">
         <li>Auto-login of "pi" user - no password is required any longer</li>
+        <li><img src="/storage/design/red-exclamation-15px.png" />Not compatible/doesn't boot on 512 MB boards</li>
         <li><img src="/storage/design/red-exclamation-15px.png" /> Keyboard seems to be disabled during emulation :( You have to press Ctrl+Alt+Del to gracefully shutdown the Pi to load another game</li>
         <ul>
           <li>This seems to be a side effect of the auto-login feature recently added. I'm working to correct this.</li>
@@ -96,6 +121,7 @@
     <td></td>
     <td>
       <ul class="compact-list">
+        <li><img src="/storage/design/red-exclamation-15px.png" />Not compatible/doesn't boot on 512 MB boards</li>
         <li>Many audio issues resolved. See updated <a href="http://karmanebula.com/game-support">game support list</a></li>
         <li>Full speed emulation for most games</li>
         <li><img src="/storage/design/yellow-exclamation-15px.png" /> Limited audio issues. Most games working well.</li>        
@@ -110,6 +136,7 @@
     <td></td>
     <td>
       <ul class="compact-list">
+        <li><img src="/storage/design/red-exclamation-15px.png" />Not compatible/doesn't boot on 512 MB boards</li>
         <li>Had to stop and restart retroarch twice to get FCEU to work at full speed. Might have been a fluke.</li>
         <li>Full speed emulation for most games</li>
         <li><img src="/storage/design/yellow-exclamation-15px.png" /> Many games with <u><strong>minor</strong></u> to <u><strong>extreme audio pops/glitches</strong></u>, and some performance problems.

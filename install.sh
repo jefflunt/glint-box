@@ -17,6 +17,7 @@ curl -L https://raw.github.com/normalocity/glint-nes/$GLINTNESBRANCH/scripts/usb
 
 curl -L https://raw.github.com/normalocity/glint-nes/$GLINTNESBRANCH/scripts/copy-roms.sh > $HOME/copy-roms.sh
 sudo mv $HOME/copy-roms.sh /usr/local/bin/copy-roms.sh
+sudo chmod +x /usr/local/bin/copy-roms.sh
 
 # Run scripts
 cd $HOME

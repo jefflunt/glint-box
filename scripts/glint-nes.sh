@@ -6,8 +6,6 @@ then
   export GLINTNESBRANCH=master
 fi
 
-RETROARCH_CONFIG="$HOME/.retroarch"
-
 function addCertificatesForRetroarchBinaries() {
   echo ""
   echo "## Adding certificates and apt sources for retroarch..."
@@ -37,7 +35,7 @@ function installFceuAndRetroarch() {
   sudo apt-get -y install libretro-fceu retroarch
   
   mkdir -p $RETROARCH_CONFIG
-  curl -L https://raw.github.com/normalocity/glint-nes/$GLINTNESBRANCH/config/retroarch.cfg > $RETROARCH_CONFIG/retroarch.cfg  
+  curl -L https://raw.github.com/normalocity/glint-nes/$GLINTNESBRANCH/config/retroarch.cfg > $HOME/.retroarch/retroarch.cfg  
 }
 
 function copyUserAndRPiConfigFiles() {

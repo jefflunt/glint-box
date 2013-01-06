@@ -10,8 +10,6 @@ if [ -d "$TARGET" ]; then
 fi
 if [ -d "$SOURCE" ]; then
   # Stop glint-es, clear console, and start ROM file copy
-  killall glint-es
-  clear
   echo "Copying ROMs from USB stick...please wait..."
   find $SOURCE -type f \( -name "*.nes" -o -name "*.NES" -o -name "*.Nes" \) -a \( ! -regex '.*/\..*' \) -exec cp {} $TARGET \; 
   sudo chown -R pi:pi $HOME/roms
@@ -19,7 +17,7 @@ if [ -d "$SOURCE" ]; then
   # Unmount USB stick and restart glint-es
   sudo umount /mnt/removeable
   echo "Starting glint-es"
-  /home/pi/glint-es/glint-es &
+  killall glint-es && /home/pi/glint-es/glint-es &
 else
    echo "ERR: $SOURCE does not exist."   
    exit 1

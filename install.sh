@@ -43,5 +43,5 @@ sudo apt-get -y clean
 sudo rm -rf `find /var/log/ . -type f`
 
 # Reboot
-echo "==============================================================\n"
-echo "\n\nglint-nes install scripts done. You should probably reboot now.\n"
+echo "==============================================================="
+echo "glint-nes install scripts done. You should probably reboot now."

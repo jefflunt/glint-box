@@ -51,13 +51,15 @@ This command runs a script from the project that downloads and installs everythi
 
 ## Play! (BYOR - Bring Your Own ROMs)
 
-Place any ROMs you have under the `/home/pi/roms` folder and reboot the RPi. This time it should boot straight into the graphical frontend
+**glint-nes** now has the ability to copy **.nes** auto-magically from a USB stick. After you boot into the game selection screen, simply insert a USB stick into your Pi containing your **.nes** files (sorry, zipped versions of these are not supported - you must have the plain **.nes** file), and **glint-nes** will automically find and copy them onto your Raspberry Pi. The whole process takes from a few seconds to perhaps a minute or two, depending on the size and number of ROMs you have.
+
+You'll know when **glint-nes** is done copying the ROMs, because the games list reset itself, displaying your list of games. Once this is done you can safely remove the USB stick and continue on with your day. :D
 
 Please [report issues](https://groups.google.com/forum/?hl=en&fromgroups=#!forum/glint-help) that you run into. :)
 
-**But where are the game ROMs?**
+**Doesn't glint-nes come with games?**
 
-You'll have to find those on your own. Please don't email me asking for ROMs.
+Nope. You'll have to find those on your own. Please don't email me asking for ROMs.
 
 **Controls:**
 

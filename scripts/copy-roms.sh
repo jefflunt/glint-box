@@ -15,7 +15,7 @@ if [ -d "$SOURCE" ]; then
   echo "Copied ROMs to $TARGET" >> /var/log/syslog
   
   # Unmount USB stick and restart glint-es
-  sudo umount /mnt/removeable
+  sudo umount $SOURCE
   killall glint-es && /home/pi/glint-es/glint-es &
 else
    echo "ERR: $SOURCE does not exist."   

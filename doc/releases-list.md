@@ -33,7 +33,7 @@ Thank you so much for trying out glint!
     
     <tr>
       <td>2012-11-11</td>
-      <td><img src="http://static.squarespace.com/static/50f9940de4b0dc4dd5c98a54/50f994b1e4b0b8d1fb06b1b0/50f994b1e4b0b8d1fb06b1b2/1358533814524/red-exclamation-15px.png?format=100w" /> <a href="#2012-11-11-problems">Booting</a></td>
+      <td><img src="https://s3.amazonaws.com/karmanebula-com-static-resources/red-exclamation-15px.png" /> <a href="#2012-11-11-problems">Booting</a></td>
       <td>REMOVED</td>
       <td>N/A</td>
       <td><a href="http://downloads.raspberrypi.org/images/raspbian/2012-10-28-wheezy-raspbian/2012-10-28-wheezy-raspbian.zip">Raspbian 2012-10-28</a></td>
@@ -42,7 +42,7 @@ Thank you so much for trying out glint!
 
     <tr>
       <td>2012-11-05</td>
-      <td><img src="https://karmanebula6.squarespace.com/static/50f9940de4b0dc4dd5c98a54/50f994b1e4b0b8d1fb06b1b0/50f994b1e4b0b8d1fb06b1b3/1352128775084/yellow-exclamation-15px.png/1000w" /><a href="#2012-11-05-problems">Audio</a></td>
+      <td><img src="https://s3.amazonaws.com/karmanebula-com-static-resources/yellow-exclamation-15px.png" /><a href="#2012-11-05-problems">Audio</a></td>
       <td><a href="https://s3-us-west-2.amazonaws.com/glint-images/2012-11-05-glint-nes.img.zip">download</a></td>
       <td>N/A</td>
       <td><a href="http://downloads.raspberrypi.org/images/raspbian/2012-10-28-wheezy-raspbian/2012-10-28-wheezy-raspbian.zip">Raspbian 2012-10-28</a></td>
@@ -51,7 +51,7 @@ Thank you so much for trying out glint!
 
     <tr>
       <td>2012-11-03</td>
-      <td><a href="#2012-11-03-problems"><img src="https://karmanebula6.squarespace.com/static/50f9940de4b0dc4dd5c98a54/50f994b1e4b0b8d1fb06b1b0/50f994b1e4b0b8d1fb06b1b3/1352128775084/yellow-exclamation-15px.png/1000w" />Audio</a></td>
+      <td><a href="#2012-11-03-problems"><img src="https://s3.amazonaws.com/karmanebula-com-static-resources/yellow-exclamation-15px.png" />Audio</a></td>
       <td><a href="https://s3-us-west-2.amazonaws.com/glint-images/2012-11-03-glint-nes.img.zip">download</a></td>
       <td>N/A</td>
       <td><a href="http://downloads.raspberrypi.org/images/raspbian/2012-10-28-wheezy-raspbian/2012-10-28-wheezy-raspbian.zip">Raspbian 2012-10-28</a></td>
@@ -60,7 +60,7 @@ Thank you so much for trying out glint!
     
     <tr>
       <td>2012-11-02</td>
-      <td><a href="#2012-11-02-problems"><img src="http://static.squarespace.com/static/50f9940de4b0dc4dd5c98a54/50f994b1e4b0b8d1fb06b1b0/50f994b1e4b0b8d1fb06b1b2/1358533814524/red-exclamation-15px.png?format=100w" />Booting</a></td>
+      <td><a href="#2012-11-02-problems"><img src="https://s3.amazonaws.com/karmanebula-com-static-resources/red-exclamation-15px.png" />Booting</a></td>
       <td>REMOVED</td>
       <td>N/A</td>
       <td>Raspbian 2012-09-18</td>
@@ -69,7 +69,7 @@ Thank you so much for trying out glint!
     
     <tr>
       <td>2012-11-01</td>
-      <td><a href="#2012-11-01-problems"><img src="http://static.squarespace.com/static/50f9940de4b0dc4dd5c98a54/50f994b1e4b0b8d1fb06b1b0/50f994b1e4b0b8d1fb06b1b2/1358533814524/red-exclamation-15px.png?format=100w" />Booting</a></td>
+      <td><a href="#2012-11-01-problems"><img src="https://s3.amazonaws.com/karmanebula-com-static-resources/red-exclamation-15px.png" />Booting</a></td>
       <td>REMOVED</td>
       <td>N/A</td>
       <td>Raspbian 2012-09-18</td>
@@ -100,8 +100,8 @@ Thank you so much for trying out glint!
     <td>
       <ul class="compact-list">
         <li>Auto-login of "pi" user - no password is required any longer</li>
-        <li><img src="http://static.squarespace.com/static/50f9940de4b0dc4dd5c98a54/50f994b1e4b0b8d1fb06b1b0/50f994b1e4b0b8d1fb06b1b2/1358533814524/red-exclamation-15px.png?format=100w" />Not compatible/doesn't boot on 512 MB boards</li>
-        <li><img src="http://static.squarespace.com/static/50f9940de4b0dc4dd5c98a54/50f994b1e4b0b8d1fb06b1b0/50f994b1e4b0b8d1fb06b1b2/1358533814524/red-exclamation-15px.png?format=100w" /> Keyboard seems to be disabled during emulation :( You have to press Ctrl+Alt+Del to gracefully shutdown the Pi to load another game</li>
+        <li><img src="https://s3.amazonaws.com/karmanebula-com-static-resources/red-exclamation-15px.png" />Not compatible/doesn't boot on 512 MB boards</li>
+        <li><img src="https://s3.amazonaws.com/karmanebula-com-static-resources/red-exclamation-15px.png" /> Keyboard seems to be disabled during emulation :( You have to press Ctrl+Alt+Del to gracefully shutdown the Pi to load another game</li>
         <ul>
           <li>This seems to be a side effect of the auto-login feature recently added. I'm working to correct this.</li>
         </ul>
@@ -121,10 +121,10 @@ Thank you so much for trying out glint!
     <td></td>
     <td>
       <ul class="compact-list">
-        <li><img src="http://static.squarespace.com/static/50f9940de4b0dc4dd5c98a54/50f994b1e4b0b8d1fb06b1b0/50f994b1e4b0b8d1fb06b1b2/1358533814524/red-exclamation-15px.png?format=100w" />Not compatible/doesn't boot on 512 MB boards</li>
+        <li><img src="https://s3.amazonaws.com/karmanebula-com-static-resources/red-exclamation-15px.png" />Not compatible/doesn't boot on 512 MB boards</li>
         <li>Many audio issues resolved. See updated <a href="http://karmanebula.com/game-support">game support list</a></li>
         <li>Full speed emulation for most games</li>
-        <li><img src="https://karmanebula6.squarespace.com/static/50f9940de4b0dc4dd5c98a54/50f994b1e4b0b8d1fb06b1b0/50f994b1e4b0b8d1fb06b1b3/1352128775084/yellow-exclamation-15px.png/1000w" /> Limited audio issues. Most games working well.</li>        
+        <li><img src="https://s3.amazonaws.com/karmanebula-com-static-resources/yellow-exclamation-15px.png" /> Limited audio issues. Most games working well.</li>        
       </ul>
     </td>
   </tbody>
@@ -136,10 +136,10 @@ Thank you so much for trying out glint!
     <td></td>
     <td>
       <ul class="compact-list">
-        <li><img src="http://static.squarespace.com/static/50f9940de4b0dc4dd5c98a54/50f994b1e4b0b8d1fb06b1b0/50f994b1e4b0b8d1fb06b1b2/1358533814524/red-exclamation-15px.png?format=100w" />Not compatible/doesn't boot on 512 MB boards</li>
+        <li><img src="https://s3.amazonaws.com/karmanebula-com-static-resources/red-exclamation-15px.png" />Not compatible/doesn't boot on 512 MB boards</li>
         <li>Had to stop and restart retroarch twice to get FCEU to work at full speed. Might have been a fluke.</li>
         <li>Full speed emulation for most games</li>
-        <li><img src="https://karmanebula6.squarespace.com/static/50f9940de4b0dc4dd5c98a54/50f994b1e4b0b8d1fb06b1b0/50f994b1e4b0b8d1fb06b1b3/1352128775084/yellow-exclamation-15px.png/1000w" /> Many games with <u><strong>minor</strong></u> to <u><strong>extreme audio pops/glitches</strong></u>, and some performance problems.
+        <li><img src="https://s3.amazonaws.com/karmanebula-com-static-resources/yellow-exclamation-15px.png" /> Many games with <u><strong>minor</strong></u> to <u><strong>extreme audio pops/glitches</strong></u>, and some performance problems.
         <li>Successfully images to 2GB or larger SD card</li>
       </ul>
     </td>
@@ -149,7 +149,7 @@ Thank you so much for trying out glint!
 ### Notes for BETA 2012-11-02-glint-nes image
 <table id="2012-11-02-problems" class="release-problems">
   <tbody>
-    <td><img src="http://static.squarespace.com/static/50f9940de4b0dc4dd5c98a54/50f994b1e4b0b8d1fb06b1b0/50f994b1e4b0b8d1fb06b1b2/1358533814524/red-exclamation-15px.png?format=100w" /></td>
+    <td><img src="https://s3.amazonaws.com/karmanebula-com-static-resources/red-exclamation-15px.png" /></td>
     <td>Raspberry Pi doesn't successfully boot from this image.</td>
   </tbody>
 </table>
@@ -158,7 +158,7 @@ Thank you so much for trying out glint!
 ### Notes for BETA 2012-11-01-glint-nes image
 <table id="2012-11-01-problems" class="release-problems">
   <tbody>
-    <td><img src="http://static.squarespace.com/static/50f9940de4b0dc4dd5c98a54/50f994b1e4b0b8d1fb06b1b0/50f994b1e4b0b8d1fb06b1b2/1358533814524/red-exclamation-15px.png?format=100w" /></td>
+    <td><img src="https://s3.amazonaws.com/karmanebula-com-static-resources/red-exclamation-15px.png" /></td>
     <td>Raspberry Pi doesn't successfully boot from this image.</td>
   </tbody>
 </table>

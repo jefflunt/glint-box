@@ -1,10 +1,9 @@
 #!/bin/bash
 
 # Set the glint-nes branch to pull from on github if it isn't already set
-if [ -z "$GLINTNESBRANCH" ]
-then
-  export GLINTNESBRANCH=master
-fi
+${GLINTNESBRANCH?GLINTNESBRANCH=master}
+HOME=/home/pi
+RETROARCH_CONFIG=$HOME/.retroarch
 
 function addCertificatesForRetroarchBinaries() {
   echo ""

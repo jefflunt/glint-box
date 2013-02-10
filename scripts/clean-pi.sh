@@ -1,5 +1,7 @@
 #!/bin/bash
 
+HOME=/home/pi
+
 function removePythonGames() {
   echo ""
   echo "## Removing python games..."

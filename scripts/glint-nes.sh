@@ -90,32 +90,38 @@ function setupGlintES() {
 }
 
 # Currently disabled
-#function setupCustomSplashScreen() {
+function setupCustomSplashScreen() {
   # Custom splash screen stuff - disabled for now because it's unstable
   # From: http://raspberrypi.stackexchange.com/questions/1214/how-to-add-custom-loading-screen
-  # apt-get -y install fbi
-  # curl -L https://raw.github.com/normalocity/glint-nes/$GLINTNESBRANCH/glint-nes-splash.png > /tmp/splash.png
-  # mv /tmp/splash.png > /etc/splash.png
-  # 
-  # curl -L https://raw.github.com/normalocity/glint-nes/$GLINTNESBRANCH/scripts/glint-splash > /tmp/glint-splash
-  # mv /tmp/glint-splash /etc/init.d/aaasplash
-  # 
-  # chmod a+x /etc/init.d/aaasplash
-  # insserv /etc/init.d/aaasplash
-#}
+  sudo apt-get -y install fbi
+  curl -L https://raw.github.com/normalocity/glint-nes/$GLINTNESBRANCH/glint-nes-splash.png > /tmp/splash.png
+  sudo mv /tmp/splash.png > /etc/splash.png
+   
+  curl -L https://raw.github.com/normalocity/glint-nes/$GLINTNESBRANCH/scripts/glint-splash > /tmp/glint-splash
+  sudo mv /tmp/glint-splash /etc/init.d/aaasplash
+   
+  sudo chmod a+x /etc/init.d/aaasplash
+  sudo insserv /etc/init.d/aaasplash
+}
 
 # Currently disabled
-#function setupUSBMounting() {
+function setupUSBMounting() {
   # USB drive support for easy ROM loading
-  # apt-get -y install udev autofs
-  # mkdir -p /mnt/usbdisk
-  # curl -L https://raw.github.com/normalocity/glint-nes/$GLINTNESBRANCH/config/udev-custom.rules > /etc/udev/rules.d/00-custom.rules
-  # curl -L https://raw.github.com/normalocity/glint-nes/$GLINTNESBRANCH/config/auto.master > /etc/auto.master
-  # curl -L https://raw.github.com/normalocity/glint-nes/$GLINTNESBRANCH/config/auto.master > /etc/auto.ext-usb
-  # 
-  # /etc/init.d/udev restart
-  # /etc/init.d/autofs restart
-#}
+  sudo apt-get -y install udev autofs
+  sudo  mkdir -p /mnt/usbdisk
+
+  curl -L https://raw.github.com/normalocity/glint-nes/$GLINTNESBRANCH/config/udev-custom.rules > /tmp/00-custom.rules
+  sudo mv /tmp/00-custom.rules /etc/udev/rules.d/00-custom.rules
+  
+  curl -L https://raw.github.com/normalocity/glint-nes/$GLINTNESBRANCH/config/auto.master > /tmp/auto.master
+  sudo mv /tmp/auto.master /etc/auto.master
+  
+  curl -L https://raw.github.com/normalocity/glint-nes/$GLINTNESBRANCH/config/auto.master > /tmp/auto.ext-usb
+  sudo mv /tmp/auto.ext-usb /etc/auto.ext-usb
+  
+  sudo /etc/init.d/udev restart
+  sudo /etc/init.d/autofs restart
+}
 
 function setupAudioModules() {
   echo ""
@@ -145,6 +151,6 @@ copyUserAndRPiConfigFiles
 makeGlintLogFolder
 setupAutoLogin
 setupGlintES
-#setupCustomSplashScreen
-#setupUSBMounting
+setupCustomSplashScreen
+setupUSBMounting
 setupAudioModules

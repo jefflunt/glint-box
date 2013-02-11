@@ -11,6 +11,8 @@ declare -A buttons
 
 buttons=( ["up"]="$3" ["down"]="$4" ["left"]="$5" ["right"]="$6" ["b"]="$7" ["a"]="$8" ["select"]="$9" ["start"]="$10" )
 
+echo buttons
+
 sed -ie "s/input_player$PLAYER_joypad_index.*/input_player$PLAYER_joypad_index = \"$PLAYER\"/g" $RACONFIG
 
 sed -ie "s/input_player$PLAYER_up_axis.*/input_player$PLAYER_up_axis = \"-${buttons["up"]}\"/g" $RACONFIG

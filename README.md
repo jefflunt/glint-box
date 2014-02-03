@@ -1,17 +1,12 @@
 ![glint - retro emulation for the masses](https://s3-us-west-2.amazonaws.com/glint-images/glint.png "glint - retro emulation for the masses")
 
-## Help, news, and contact info
+## Contact info
 
-I've setup two Google groups to help users.
-
-* [glint help](https://groups.google.com/forum/?hl=en&fromgroups=#!forum/glint-help) - Q&A for glint box builders and modders
-* [glint news](https://groups.google.com/forum/?hl=en&fromgroups=#!forum/glint-news) - low traffic, official announcements of glint releases and updates
-
-You can also reach me at <jefflunt@gmail.com> if you like, but if you're looking for support with building or modding a glint box (as opposed to a GitHub coding issue), please forward your question to the glint help group referenced above.
+You can reach me at <jefflunt@gmail.com> if you like. I really don't mind.
 
 ## Goals and Philosophy
 
-It's my desire to build a project that allows you to convert your Raspberry Pi into a great little emulation box. To get started I'm working on glint-nes, the first of many dedicated, single-console emulation boxes.
+It's my desire to build a project that allows you to convert your Raspberry Pi into a great little emulation box. To get started I'm working on glint-nes, a single-console emulation box for the 8-bit Nintendo Entertainment System.
 
 My vision is to provide "turn on and play" functionality. That is, eventually you should be able to download a [pre-built OS image](http://karmanebula.com/glint-downloads/) to your SD card with everything installed and configured already, and all you have to do is plug the Raspberry Pi into your TV with a compatible controller and you're playing classic NES games in 30 seconds or less (BYOR - bring your own ROMs).
 

@@ -1,8 +1,6 @@
-![glint - retro emulation for the masses](https://s3-us-west-2.amazonaws.com/glint-images/glint.png "glint - retro emulation for the masses")
+# Retired
 
-## Contact info
-
-You can reach me at <jefflunt@gmail.com> if you like. I really don't mind.
+This project stopped development quite a long time ago. Checkout [lakka.tv](http://www.lakka.tv/) instead.
 
 ## Goals and Philosophy
 
